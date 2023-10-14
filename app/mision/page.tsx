@@ -65,7 +65,7 @@ export default function Page() {
         <div className="flex items-center gap-2">
           <Dialog>
             <DialogTrigger className={cn(buttonVariants({ variant: "secondary" }))}>Necesito ayuda</DialogTrigger>
-            <DialogContent className=" max-md:max-w-full max-md:h-full max-md:overflow-y-scroll max-md:max-h-screen max-md:flex max-md:flex-col max-md:justify-center max-md:gap-12">
+            <DialogContent className="max-md:max-w-full max-w-md max-md:h-full max-md:overflow-y-scroll max-md:max-h-screen max-md:flex max-md:flex-col max-md:justify-center max-md:gap-12">
               <DialogHeader>
                 <DialogTitle>
                   ¿Necesitas ayuda?
