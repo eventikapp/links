@@ -1,9 +1,16 @@
-import Image from "next/image";
-import logoEventik from "@/public/logo-eventik.svg"
-import bannerTomatulugar from "@/public/banner-tomatulugar.jpg"
+import type { Metadata } from 'next'
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
+
+import logoEventik from "@/public/logo-eventik.svg"
+import bannerEmuba from "@/public/banner-aviva.jpg"
+
 import { buttonVariants } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: `Eventik | EMUBA`
+}
 
 export default function Page() {
   return (
@@ -18,37 +25,33 @@ export default function Page() {
         />
 
         <div className="w-full flex flex-col items-center gap-4">
-          <h2 className="text-center font-semibold text-md md:text-xl">Eventos</h2>
+          <Image
+            src={bannerEmuba}
+            alt="Banner EMUBA"
+            width={745}
+            height={346}
+            className="mb-2 rounded-lg shadow"
+            priority
+          />
+
+          <h2 className="text-center font-semibold text-md md:text-xl">Elige tu inscripción según corresponda:</h2>
 
           <Link
-            href="/tomatulugar"
+            href="https://emuba.eventik.app/evento/aviva-el-fuego/"
             className={
               cn(buttonVariants({ size: "lg" }),
                 "w-full max-w-xl text-lg"
               )}
+            target="_blank"
           >
-            TOMATULUGAR
+            🇦🇷 Argentinos
           </Link>
-           <Link
-            href="/mision"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}
-          >
-            MiSion CEM</Link>
-          <Link
-            href="/emuba"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}>EMUBA</Link>
         </div>
 
         <div className="flex items-center gap-2">
           <p>¿Necesitas ayuda?</p>
           <Link
-            href="https://wa.me/5491124058816"
+            href="https://wa.me/5491122602647"
             className="underline"
             target="_blank"
           >

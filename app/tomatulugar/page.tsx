@@ -37,7 +37,7 @@ export default function Page() {
           <h2 className="text-center font-semibold text-md md:text-xl">Elige tu inscripción según corresponda:</h2>
 
           <Link
-            href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
+            href="https://tomatulugar-ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
             className={
               cn(buttonVariants({ size: "lg" }),
                 "w-full max-w-xl text-lg"
