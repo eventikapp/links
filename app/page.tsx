@@ -16,11 +16,11 @@ export default function Page() {
         />
 
         <div className="w-full max-w-xl flex flex-col gap-4">
-          <h2 className="text-center font-semibold text-xl text-white">Elige tu inscripción según corresponda:</h2>
+          <h2 className="text-center font-semibold text-xl">Elige tu inscripción según corresponda:</h2>
 
           <Link
             href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
-            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "text-lg transition-all duration-300 hover:scale-[1.1]")}
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "text-lg transition-all duration-300 ")}
             target="_blank"
           >
             🇦🇷 Argentinos
@@ -28,7 +28,7 @@ export default function Page() {
 
           <Link
             href="https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino?v=35357b9c8fe4"
-            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "text-lg transition-all duration-300 hover:scale-[1.1]")}
+            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "text-lg transition-all duration-300")}
             target="_blank"
           >
             🌍 Internacionales
@@ -36,10 +36,10 @@ export default function Page() {
         </div>
 
         <div className="flex items-center gap-2">
-          <p className="text-white">¿Necesitas ayuda?</p>
+          <p>¿Necesitas ayuda?</p>
           <Link
             href="https://wa.me/543516344971"
-            className="text-white underline"
+            className="underline"
             target="_blank"
           >
             Escríbenos
