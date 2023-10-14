@@ -30,7 +30,7 @@ export default function Page() {
             alt="Banner tomatulugar"
             width={745}
             height={346}
-            className="mb-6 rounded-lg shadow-md"
+            className="mb-6 rounded-lg shadow"
             priority
           />
 
