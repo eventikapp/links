@@ -30,7 +30,7 @@ export default function Page() {
             alt="Banner tomatulugar"
             width={745}
             height={346}
-            className="mb-6 rounded-lg shadow-lg"
+            className="mb-6 rounded-lg shadow-md"
             priority
           />
 
@@ -38,10 +38,7 @@ export default function Page() {
 
           <Link
             href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}
+            className="rounded-md w-full max-w-xl bg-stone-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-stone-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600"
             target="_blank"
           >
             🇦🇷 Argentinos
@@ -49,10 +46,7 @@ export default function Page() {
 
           <Link
             href="https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino?v=35357b9c8fe4"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}
+            className="rounded-md w-full max-w-xl bg-stone-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-stone-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600"
             target="_blank"
           >
             🌍 Internacionales
