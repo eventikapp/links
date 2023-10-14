@@ -18,13 +18,15 @@ export default function Page() {
   return (
     <div className="flex items-center flex-col mx-auto w-full justify-center mt-8 px-4 md:px-8">
       <div className="w-full flex items-center flex-col gap-8">
-        <Image
-          src={logoEventik}
-          alt="Logo eventikapp"
-          width={120}
-          height={120}
-          priority
-        />
+        <Link href="/">
+          <Image
+            src={logoEventik}
+            alt="Logo eventikapp"
+            width={120}
+            height={120}
+            priority
+          />
+        </Link>
 
         <div className="w-full flex flex-col items-center gap-4">
           <Image
