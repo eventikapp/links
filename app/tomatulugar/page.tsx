@@ -18,17 +18,37 @@ export default function Page() {
         />
 
         <div className="w-full flex flex-col items-center gap-4">
-          <h2 className="text-center font-semibold text-xl">Eventos:</h2>
+          <Image
+            src={bannerTomatulugar}
+            alt="Banner tomatulugar"
+            width={745}
+            height={346}
+            className="mb-6"
+            priority
+          />
+
+          <h2 className="text-center font-semibold text-xl">Elige tu inscripción según corresponda:</h2>
 
           <Link
-            href="/tomatulugar"
+            href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
             className={
               cn(buttonVariants({ size: "lg" }),
                 "w-full max-w-xl text-lg"
               )}
             target="_blank"
           >
-            TOMATULUGAR
+            🇦🇷 Argentinos
+          </Link>
+
+          <Link
+            href="https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino?v=35357b9c8fe4"
+            className={
+              cn(buttonVariants({ size: "lg" }),
+                "w-full max-w-xl text-lg"
+              )}
+            target="_blank"
+          >
+            🌍 Internacionales
           </Link>
         </div>
 
