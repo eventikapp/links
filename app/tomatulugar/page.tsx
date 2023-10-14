@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-8 px-8">
+    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
       <div className="w-full flex items-center flex-col gap-16">
         <Image
           src={logoEventik}
@@ -38,15 +38,21 @@ export default function Page() {
 
           <Link
             href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
-            className="rounded-md w-full max-w-xl bg-stone-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-stone-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600"
+            className={
+              cn(buttonVariants({ size: "lg" }),
+                "w-full max-w-xl text-lg"
+              )}
             target="_blank"
           >
             🇦🇷 Argentinos
           </Link>
 
           <Link
-            href="https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino?v=35357b9c8fe4"
-            className="rounded-md w-full max-w-xl bg-stone-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-stone-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600"
+            href="https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
+            className={
+              cn(buttonVariants({ size: "lg" }),
+                "w-full max-w-xl text-lg"
+              )}
             target="_blank"
           >
             🌍 Internacionales
