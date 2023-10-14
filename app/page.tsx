@@ -1,6 +1,5 @@
 import Image from "next/image";
 import logoEventik from "@/public/logo-eventik.svg"
-import bannerTomatulugar from "@/public/banner-tomatulugar.jpg"
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -29,7 +28,7 @@ export default function Page() {
           >
             TOMATULUGAR
           </Link>
-           <Link
+          <Link
             href="/mision"
             className={
               cn(buttonVariants({ size: "lg" }),
