@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from "next/image"
 import logoEventik from "@/public/logo-eventik.svg"
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link"
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "@/components/ui/button"
 
 export default function Page() {
   return (
@@ -19,31 +19,37 @@ export default function Page() {
         </Link>
 
         <div className="flex w-full flex-col items-center gap-4">
-          <h2 className="text-center text-base font-semibold md:text-xl">Eventos</h2>
+          <h2 className="text-center text-base font-semibold md:text-xl">
+            Eventos
+          </h2>
 
           <Link
             href="/tomatulugar"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "w-full max-w-xl text-lg"
+            )}
           >
             TOMATULUGAR
           </Link>
           <Link
             href="/mision"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "w-full max-w-xl text-lg"
+            )}
           >
-            MiSion CEM</Link>
+            MiSion CEM
+          </Link>
           <Link
             href="/emuba"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}>EMUBA</Link>
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "w-full max-w-xl text-lg"
+            )}
+          >
+            EMUBA
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
@@ -58,5 +64,5 @@ export default function Page() {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+import type { Metadata } from "next"
+import Link from "next/link"
+import Image from "next/image"
+import { cn } from "@/lib/utils"
 
-import logoEventik from "@/public/logo-eventik.svg";
-import bannerEmuba from "@/public/banner-aviva.jpg";
+import logoEventik from "@/public/logo-eventik.svg"
+import bannerEmuba from "@/public/banner-aviva.jpg"
 
-import { buttonVariants } from "@/components/ui/button";
-import { DialogFAQ } from "@/components/dialog-faq";
+import { buttonVariants } from "@/components/ui/button"
+import { DialogFAQ } from "@/components/dialog-faq"
 
 export const metadata: Metadata = {
-  title: `Eventik | EMUBA`
+  title: `Eventik | EMUBA`,
 }
 
 export default function Page() {
@@ -37,14 +37,16 @@ export default function Page() {
             priority
           />
 
-          <h2 className="text-center text-base font-semibold md:text-xl">Elige tu inscripción según corresponda:</h2>
+          <h2 className="text-center text-base font-semibold md:text-xl">
+            Elige tu inscripción según corresponda:
+          </h2>
 
           <Link
             href="https://emuba.eventik.app/evento/aviva-el-fuego/"
-            className={
-              cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "w-full max-w-xl text-lg"
+            )}
             target="_blank"
           >
             🇦🇷 Argentinos
@@ -56,5 +58,5 @@ export default function Page() {
         </div>
       </div>
     </div>
-  );
+  )
 }
