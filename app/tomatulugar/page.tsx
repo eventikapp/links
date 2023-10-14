@@ -1,9 +1,16 @@
+import type { Metadata } from 'next'
+import Link from "next/link";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+
 import logoEventik from "@/public/logo-eventik.svg"
 import bannerTomatulugar from "@/public/banner-tomatulugar.jpg"
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+
 import { buttonVariants } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: `Eventik | Tomatulugar`
+}
 
 export default function Page() {
   return (
