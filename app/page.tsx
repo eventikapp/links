@@ -12,7 +12,7 @@ export default function Page() {
         <Image
           src={logoEventik}
           alt="Logo eventikapp"
-          width={140}
+          width={128}
           height={140}
           priority
         />
@@ -33,7 +33,7 @@ export default function Page() {
             href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
             className={
               cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg transition-all duration-300 hover:scale-[1.1]"
+                "w-full max-w-xl text-lg"
               )}
             target="_blank"
           >
@@ -44,7 +44,7 @@ export default function Page() {
             href="https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino?v=35357b9c8fe4"
             className={
               cn(buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg transition-all duration-300 hover:scale-[1.1]"
+                "w-full max-w-xl text-lg"
               )}
             target="_blank"
           >
@@ -54,7 +54,6 @@ export default function Page() {
 
         <div className="flex items-center gap-2">
           <p>¿Necesitas ayuda?</p>
-
           <Link
             href="https://wa.me/543516344971"
             className="underline"
