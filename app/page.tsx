@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logoEventik from "@/public/logo-eventik.svg"
+import bannerTomatulugar from "@/public/tomatulugar-banner.jpg"
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -13,14 +14,27 @@ export default function Page() {
           alt="Logo eventikapp"
           width={140}
           height={140}
+          priority
         />
 
-        <div className="w-full max-w-xl flex flex-col gap-4">
-          <h2 className="text-center font-semibold text-xl text-white">Elige tu inscripción según corresponda:</h2>
+        <div className="w-full flex flex-col items-center gap-4">
+          <Image
+            src={bannerTomatulugar}
+            alt="Banner tomatulugar"
+            width={745}
+            height={346}
+            className="mb-6"
+            priority
+          />
+
+          <h2 className="text-center font-semibold text-xl">Elige tu inscripción según corresponda:</h2>
 
           <Link
             href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
-            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "text-lg transition-all duration-300 hover:scale-[1.1]")}
+            className={
+              cn(buttonVariants({ size: "lg" }),
+                "w-full max-w-xl text-lg transition-all duration-300 hover:scale-[1.1]"
+              )}
             target="_blank"
           >
             🇦🇷 Argentinos
@@ -28,7 +42,10 @@ export default function Page() {
 
           <Link
             href="https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino?v=35357b9c8fe4"
-            className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "text-lg transition-all duration-300 hover:scale-[1.1]")}
+            className={
+              cn(buttonVariants({ size: "lg" }),
+                "w-full max-w-xl text-lg transition-all duration-300 hover:scale-[1.1]"
+              )}
             target="_blank"
           >
             🌍 Internacionales
@@ -36,10 +53,11 @@ export default function Page() {
         </div>
 
         <div className="flex items-center gap-2">
-          <p className="text-white">¿Necesitas ayuda?</p>
+          <p>¿Necesitas ayuda?</p>
+
           <Link
             href="https://wa.me/543516344971"
-            className="text-white underline"
+            className="underline"
             target="_blank"
           >
             Escríbenos
