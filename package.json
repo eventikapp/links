@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
@@ -27,5 +28,10 @@
     "tailwindcss": "^3.3.3",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint-config-next": "13.5.4",
+    "eslint-plugin-tailwindcss": "^3.13.0"
   }
 }

@@ -6,8 +6,8 @@ import { buttonVariants } from "@/components/ui/button";
 
 export default function Page() {
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-8 px-4 md:px-8">
-      <div className="w-full flex items-center flex-col gap-8">
+    <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center px-4 md:px-8">
+      <div className="flex w-full flex-col items-center gap-8">
         <Link href="/">
           <Image
             src={logoEventik}
@@ -18,8 +18,8 @@ export default function Page() {
           />
         </Link>
 
-        <div className="w-full flex flex-col items-center gap-4">
-          <h2 className="text-center font-semibold text-md md:text-xl">Eventos</h2>
+        <div className="flex w-full flex-col items-center gap-4">
+          <h2 className="text-center text-base font-semibold md:text-xl">Eventos</h2>
 
           <Link
             href="/tomatulugar"
