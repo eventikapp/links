@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-8 px-8">
+    <div className="flex items-center flex-col mx-auto w-full justify-center mt-8 px-4 md:px-8">
       <div className="w-full flex items-center flex-col gap-8">
         <Image
           src={logoEventik}
@@ -30,11 +30,11 @@ export default function Page() {
             alt="Banner tomatulugar"
             width={745}
             height={346}
-            className="mb-6 rounded-lg shadow"
+            className="mb-2 rounded-lg shadow"
             priority
           />
 
-          <h2 className="text-center font-semibold text-xl">Elige tu inscripción según corresponda:</h2>
+          <h2 className="text-center font-semibold text-md md:text-xl">Elige tu inscripción según corresponda:</h2>
 
           <Link
             href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
