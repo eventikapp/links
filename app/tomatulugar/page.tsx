@@ -14,13 +14,13 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8">
-      <div className="w-full flex items-center flex-col gap-24">
+    <div className="flex items-center flex-col mx-auto w-full justify-center mt-8 px-8">
+      <div className="w-full flex items-center flex-col gap-16">
         <Image
           src={logoEventik}
           alt="Logo eventikapp"
-          width={128}
-          height={140}
+          width={120}
+          height={120}
           priority
         />
 
@@ -30,7 +30,7 @@ export default function Page() {
             alt="Banner tomatulugar"
             width={745}
             height={346}
-            className="mb-6"
+            className="mb-6 rounded-lg shadow-lg"
             priority
           />
 

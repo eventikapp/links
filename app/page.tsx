@@ -35,7 +35,7 @@ export default function Page() {
         <div className="flex items-center gap-2">
           <p>¿Necesitas ayuda?</p>
           <Link
-            href="https://wa.me/543516344971"
+            href="https://wa.me/5491124058816"
             className="underline"
             target="_blank"
           >
