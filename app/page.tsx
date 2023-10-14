@@ -11,7 +11,7 @@ export default function Page() {
         <Image
           src={logoEventik}
           alt="Logo eventikapp"
-          width={140}
+          width={128}
           height={140}
         />
 
