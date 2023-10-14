@@ -30,7 +30,7 @@ export function DialogFAQ({ linkWhatsApp }: { linkWhatsApp: string }) {
             <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground">
               <CreditCard className="mt-px h-5 w-5" />
               <div className="space-y-1">
-                <p className="text-sm font-medium leading-none">Compra</p>
+                <p className="text-md font-medium leading-none">Compra</p>
                 <p className="text-sm text-muted-foreground">
                   ¿Tuviste un problema al realizar la compra? ¿Hay un error en
                   tu orden?
@@ -43,7 +43,7 @@ export function DialogFAQ({ linkWhatsApp }: { linkWhatsApp: string }) {
             <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground">
               <Ticket className="mt-px h-5 w-5" />
               <div className="space-y-1">
-                <p className="text-sm font-medium leading-none">Entrada</p>
+                <p className="text-md font-medium leading-none">Entrada</p>
                 <p className="text-sm text-muted-foreground">
                   ¿No recibiste tu entrada? ¿Quieres cambiar algún dato?
                 </p>
@@ -55,7 +55,7 @@ export function DialogFAQ({ linkWhatsApp }: { linkWhatsApp: string }) {
             <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground">
               <Info className="mt-px h-5 w-5" />
               <div className="space-y-1">
-                <p className="text-sm font-medium leading-none">
+                <p className="text-md font-medium leading-none">
                   Otras consultas
                 </p>
                 <p className="text-sm text-muted-foreground">
