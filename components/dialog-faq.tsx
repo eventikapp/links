@@ -25,7 +25,7 @@ export function DialogFAQ({ linkWhatsApp }: { linkWhatsApp: string }) {
           </DialogDescription>
         </DialogHeader>
 
-        <div className="grid gap-4 md:gap-2">
+        <div className="grid gap-4 md:gap-2 rounded-md border px-2">
           <Link href="https://wa.me/5491124058816" target="_blank">
             <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground">
               <CreditCard className="mt-px h-5 w-5" />
