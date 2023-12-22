@@ -42,13 +42,13 @@ export default function Page() {
             MiSion CEM
           </Link>
           <Link
-            href="/emuba"
+            href="/hqelv"
             className={cn(
               buttonVariants({ size: "lg" }),
               "w-full max-w-xl text-lg"
             )}
           >
-            EMUBA
+            #HQÉLV’24
           </Link>
         </div>
 

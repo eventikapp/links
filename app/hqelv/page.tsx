@@ -65,7 +65,7 @@ export default function Page() {
         </div>
 
         <div className="flex items-center gap-2">
-          <DialogFAQ linkWhatsApp="https://wa.me/5491130903522" />
+          <DialogFAQ linkWhatsApp="https://wa.me/34687125934" />
         </div>
       </div>
     </div>
