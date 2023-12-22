@@ -4,13 +4,13 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 import logoEventik from "@/public/logo-eventik.svg"
-import bannerMision from "@/public/banner-mision.jpg"
+import bannerHqelv from "@/public/banner-hqelv.jpg"
 
 import { buttonVariants } from "@/components/ui/button"
 import { DialogFAQ } from "@/components/dialog-faq"
 
 export const metadata: Metadata = {
-  title: `Eventik | Mision CEM`,
+  title: `Eventik | HQELV`,
 }
 
 export default function Page() {
