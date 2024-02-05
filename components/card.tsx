@@ -51,7 +51,7 @@ export default function Card({ event }: any) {
         {links && (
           <div className="flex items-center gap-x-2">
             {links.primary && (
-              <Link href={links.primary.url} className="flex w-full items-center justify-center gap-x-2 rounded-md bg-secondary px-4 py-2.5" target="_blank">
+              <Link href={links.primary.url} className="flex w-full items-center justify-center gap-x-2 rounded bg-gray-50 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100 px-4 py-2.5" target="_blank">
                 <span className="font-medium leading-5 text-secondary-foreground">
                   {links.primary.label}
                 </span>
@@ -59,7 +59,7 @@ export default function Card({ event }: any) {
             )}
 
             {links.secondary && (
-              <Link href={links.secondary.url} className="flex w-full items-center justify-center gap-x-2 rounded-md bg-secondary px-4 py-2.5" target="_blank">
+              <Link href={links.secondary.url} className="flex w-full items-center justify-center gap-x-2 rounded bg-gray-50 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100 px-4 py-2.5" target="_blank">
                 <span className="font-medium leading-5 text-secondary-foreground">
                   {links.secondary.label}
                 </span>
