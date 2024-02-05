@@ -11,7 +11,7 @@ export default function Card({ event }: any) {
     <div className="w-full max-w-[480px] overflow-hidden border-neutral-300 bg-white md:rounded-xl md:border">
       <Image src={cover} alt="cover event" />
 
-      <div className="space-y-3 rounded-xl px-4 py-6 md:px-8">
+      <div className="space-y-3 rounded-xl px-4 py-4 md:px-6">
         <p className="text-xl font-bold leading-8">{title}</p>
 
         <div className="space-y-3">
@@ -48,7 +48,7 @@ export default function Card({ event }: any) {
           </div>
         </div>
       </div>
-      <div className="border-t border-t-neutral-300 space-y-2 px-4 py-4 md:px-8">
+      <div className="border-t border-t-neutral-300 space-y-2 px-4 py-4 md:px-6">
         <p className="text-sm text-neutral-700 text-center">Elige tu inscripción según corresponda:</p>
      
       {links && (
