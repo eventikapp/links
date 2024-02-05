@@ -8,7 +8,7 @@ export default function Card({ event }: any) {
   const { cover, title, dateTime, location, links } = event
 
   return (
-    <div className="w-full max-w-[480px] overflow-hidden border-neutral-200 bg-white md:rounded-xl md:border">
+    <div className="w-full max-w-[480px] overflow-hidden border-neutral-300 bg-white md:rounded-xl md:border">
       <Image src={cover} alt="cover event" />
 
       <div className="space-y-3 rounded-xl px-4 py-6 md:px-8">
@@ -47,27 +47,30 @@ export default function Card({ event }: any) {
             </div>
           </div>
         </div>
-
-        {links && (
-          <div className="flex items-center gap-x-2 py-2">
-            {links.primary && (
-              <Link href={links.primary.url} className="flex w-full items-center justify-center gap-x-2 rounded bg-gray-50 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100 px-4 py-2.5" target="_blank">
-                <span className="font-medium leading-5 text-secondary-foreground">
-                  {links.primary.label}
-                </span>
-              </Link>
-            )}
-
-            {links.secondary && (
-              <Link href={links.secondary.url} className="flex w-full items-center justify-center gap-x-2 rounded bg-gray-50 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100 px-4 py-2.5" target="_blank">
-                <span className="font-medium leading-5 text-secondary-foreground">
-                  {links.secondary.label}
-                </span>
-              </Link>
-            )}
-          </div>
-        )}
       </div>
-    </div>
+      <div className="border-t border-t-neutral-300 space-y-2 px-4 py-4 md:px-8">
+        <p className="text-sm text-neutral-700 text-center">Elige tu inscripción según corresponda:</p>
+     
+      {links && (
+        <div className="flex items-center gap-x-2 py-2">
+            {links.primary && (
+            <Link href={links.primary.url} className="flex w-full items-center justify-center gap-x-2 rounded bg-neutral-50 font-semibold text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 hover:bg-neutral-100 px-4 py-2.5" target="_blank">
+              <span className="font-medium leading-5 text-secondary-foreground">
+                {links.primary.label}
+              </span>
+            </Link>
+          )}
+
+          {links.secondary && (
+            <Link href={links.secondary.url} className="flex w-full items-center justify-center gap-x-2 rounded bg-neutral-50 font-semibold text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 hover:bg-neutral-100 px-4 py-2.5" target="_blank">
+              <span className="font-medium leading-5 text-secondary-foreground">
+                {links.secondary.label}
+              </span>
+            </Link>
+          )}
+        </div>
+      )}
+      </div>
+       </div>
   )
 }
