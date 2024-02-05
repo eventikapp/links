@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image"
 import { ReactElement } from "react"
 
 import bannerMision from "@/public/banner-mision.jpg"
-import bannerMisionIntimidad from "@/public/banner-mision-intimidad.png"
+import bannerMisionIntimidad from "@/public/banner-mision-intimidad.jpg"
 
 export interface Event {
   id: string,

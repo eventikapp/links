@@ -49,7 +49,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="space-y-5">
+        <div className="space-y-8">
             {eventsMisionCEM.filter(event => event.status === "publish").map((event) => {
             return (
               <div key={event.id} id={`${event.anchor}`}>
