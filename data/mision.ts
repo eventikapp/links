@@ -61,7 +61,7 @@ export const eventsMisionCEM: Event[] = [
     status: "publish",
     anchor: "gi-jeps2024",
     cover: bannerMision,
-    title: "Conferencia TOMATULUGAR: Habitación 24.7",
+    title: "GI / JEPS 2024 – EN LAS CÁMARAS DEL REY",
     dateTime: {
       title: "Lunes, 19 de Febrero 2024",
       subtitle: "10:00h al Sábado, 24 de Febrero 2024, 23:00h",
