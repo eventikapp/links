@@ -1,13 +1,14 @@
+
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { cn } from "@/lib/utils"
+import { GlobeIcon, InstagramLogoIcon, VideoIcon } from '@radix-ui/react-icons'
 
-import logoEventik from "@/public/logo-eventik.svg"
-import bannerMision from "@/public/banner-mision.jpg"
+import logoMision from "@/public/logo-mision.svg"
 
-import { buttonVariants } from "@/components/ui/button"
+import Card from "@/components/card"
 import { DialogFAQ } from "@/components/dialog-faq"
+import { eventsMisionCEM } from "@/data/mision"
 
 export const metadata: Metadata = {
   title: `Eventik | Mision CEM`,
@@ -15,53 +16,45 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="mx-auto mt-8 flex w-full flex-col items-center justify-center px-4 md:px-8">
-      <div className="flex w-full flex-col items-center gap-8">
-        <Link href="/">
-          <Image
-            src={logoEventik}
-            alt="Logo eventikapp"
-            width={120}
-            height={120}
-            priority
-          />
-        </Link>
-
-        <div className="flex w-full flex-col items-center gap-4">
-          <Image
-            src={bannerMision}
-            alt="Banner mision"
-            width={745}
-            height={346}
-            className="mb-2 rounded-lg shadow"
-            priority
-          />
-
-          <h2 className="text-center text-base font-semibold md:text-xl">
-            Elige tu inscripción según corresponda:
-          </h2>
-
-          <Link
-            href="https://eventik.app/evento/gi-jeps-2024-en-las-camaras-del-rey/"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "w-full max-w-xl text-lg"
-            )}
-            target="_blank"
-          >
-            🇦🇷 Argentinos
+    <div className="mx-auto my-8 flex min-h-screen w-full flex-col items-center justify-center md:px-8">
+      <div className="flex h-full w-full flex-col items-center gap-8">
+        <div className="flex flex-col items-center justify-center gap-y-4">
+          <Link href="/">
+            <Image
+              src={logoMision}
+              alt="Logo Mision"
+              width={96}
+              height={96}
+              priority
+            />
           </Link>
 
-          <Link
-            href="https://mision-la.eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "w-full max-w-xl text-lg"
-            )}
-            target="_blank"
-          >
-            🌍 Internacionales
-          </Link>
+          <div className="flex flex-col items-center justify-center">
+            <p className="text-lg font-bold leading-7">Mision CEM</p>
+            <p className="text-muted-foreground">Centro de Entretenimiento Ministerial</p>
+          </div>
+
+          <div className="flex gap-x-4">
+            <Link href="/">
+              <GlobeIcon className="h-5 w-5" />
+            </Link>
+
+            <Link href="/">
+              <InstagramLogoIcon className="h-5 w-5" />
+            </Link>
+
+            <Link href="/">
+              <VideoIcon className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="space-y-5">
+          {eventsMisionCEM.map((event, i) => {
+            return (
+              <Card key={i} event={event} />
+            )
+          })}
         </div>
 
         <div className="flex items-center gap-2">
