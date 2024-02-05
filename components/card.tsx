@@ -25,7 +25,7 @@ export default function Card({ event }: any) {
                 {dateTime.title}
               </p>
 
-              <p className="text-sm leading-5 text-neutral-400">
+              <p className="text-sm leading-5 text-muted-foreground">
                 {dateTime.subtitle}
               </p>
             </div>
@@ -41,7 +41,7 @@ export default function Card({ event }: any) {
                 {location.title}
               </p>
 
-              <p className="text-sm leading-5 text-neutral-400">
+              <p className="text-sm leading-5 text-muted-foreground">
                 {location.subtitle}
               </p>
             </div>

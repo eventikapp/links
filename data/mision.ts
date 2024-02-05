@@ -5,7 +5,8 @@ import bannerMision from "@/public/banner-mision.jpg"
 import bannerMisionIntimidad from "@/public/banner-mision-intimidad.png"
 
 export interface Event {
-  id: string
+  id: string,
+  status: string
   cover: StaticImageData
   title: string
   dateTime: {
@@ -31,6 +32,7 @@ export interface Event {
 export const eventsMisionCEM: Event[] = [
   {
     id: "1",
+    status: "draft",
     cover: bannerMisionIntimidad,
     title: "INTIMIDAD CON EL AMADO 2024",
     dateTime: {
@@ -44,16 +46,17 @@ export const eventsMisionCEM: Event[] = [
     links: {
       primary: {
         label: "🇦🇷 Argentinos",
-        url: "https://eventik.app/evento/gi-jeps-2024-en-las-camaras-del-rey/",
+        url: "https://eventik.app/e/intimidad-con-el-amado-2024/",
       },
       secondary: {
         label: "🌍 Internacionales",
-        url: "https://mision-la.eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey",
+        url: "https://mision-la.eventik.app/e/intimidad-con-el-amado-2024",
       },
     },
   },
   {
     id: "2",
+    status: "publish",
     cover: bannerMision,
     title: "Conferencia TOMATULUGAR: Habitación 24.7",
     dateTime: {
@@ -66,8 +69,12 @@ export const eventsMisionCEM: Event[] = [
     },
     links: {
       primary: {
-        label: "Comprar entradas",
-        url: "/",
+        label: "🇦🇷 Argentinos",
+        url: "https://eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey/",
+      },
+      secondary: {
+        label: "🌍 Internacionales",
+        url: "https://mision-la.eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey",
       },
     },
   },

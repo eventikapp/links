@@ -23,8 +23,8 @@ export default function Page() {
             <Image
               src={logoMision}
               alt="Logo Mision"
-              width={96}
-              height={96}
+              width={72}
+              height={72}
               priority
             />
           </Link>
@@ -35,32 +35,22 @@ export default function Page() {
           </div>
 
           <div className="flex gap-x-4">
-            <Link href="/">
+            <Link href="https://misioninstituto.com/" target="_blank">
               <GlobeIcon className="h-5 w-5" />
             </Link>
 
-            <Link href="/">
+            <Link href="https://www.instagram.com/mision_instituto/" target="_blank">
               <InstagramLogoIcon className="h-5 w-5" />
             </Link>
 
-            <Link href="/">
+            <Link href="https://www.youtube.com/MiSionCEM" target="_blank">
               <VideoIcon className="h-5 w-5" />
             </Link>
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
-          {eventsMisionCEM.map((event) => {
-            return (
-              <a key={event.id} href={`#event-${event.id}`} className="flex items-center gap-x-2 hover:underline">
-                <ChevronRightIcon /> {event.title}
-              </a>
-            )
-          })}
-        </div>
-
         <div className="space-y-5">
-          {eventsMisionCEM.map((event) => {
+            {eventsMisionCEM.filter(event => event.status === "publish").map((event) => {
             return (
               <div key={event.id} id={`event-${event.id}`}>
                 <Card event={event} />
