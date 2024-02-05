@@ -7,6 +7,7 @@ import bannerMisionIntimidad from "@/public/banner-mision-intimidad.png"
 export interface Event {
   id: string,
   status: string
+  anchor: string
   cover: StaticImageData
   title: string
   dateTime: {
@@ -32,7 +33,8 @@ export interface Event {
 export const eventsMisionCEM: Event[] = [
   {
     id: "1",
-    status: "draft",
+    status: "publish",
+    anchor: "icea2024",
     cover: bannerMisionIntimidad,
     title: "INTIMIDAD CON EL AMADO 2024",
     dateTime: {
@@ -57,6 +59,7 @@ export const eventsMisionCEM: Event[] = [
   {
     id: "2",
     status: "publish",
+    anchor: "gi-jeps2024",
     cover: bannerMision,
     title: "Conferencia TOMATULUGAR: Habitación 24.7",
     dateTime: {

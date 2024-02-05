@@ -11,7 +11,7 @@ export default function Card({ event }: any) {
     <div className="w-full max-w-[480px] overflow-hidden border-neutral-200 bg-white md:rounded-xl md:border">
       <Image src={cover} alt="cover event" />
 
-      <div className="space-y-6 rounded-xl px-4 py-6 md:px-8">
+      <div className="space-y-3 rounded-xl px-4 py-6 md:px-8">
         <p className="text-xl font-bold leading-8">{title}</p>
 
         <div className="space-y-3">
@@ -49,7 +49,7 @@ export default function Card({ event }: any) {
         </div>
 
         {links && (
-          <div className="flex items-center gap-x-2">
+          <div className="flex items-center gap-x-2 py-2">
             {links.primary && (
               <Link href={links.primary.url} className="flex w-full items-center justify-center gap-x-2 rounded bg-gray-50 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100 px-4 py-2.5" target="_blank">
                 <span className="font-medium leading-5 text-secondary-foreground">

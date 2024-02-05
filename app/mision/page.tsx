@@ -52,7 +52,7 @@ export default function Page() {
         <div className="space-y-5">
             {eventsMisionCEM.filter(event => event.status === "publish").map((event) => {
             return (
-              <div key={event.id} id={`event-${event.id}`}>
+              <div key={event.id} id={`${event.anchor}`}>
                 <Card event={event} />
               </div>
             )
