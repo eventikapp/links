@@ -21,7 +21,7 @@ export default function Card({ event }: any) {
             </div>
 
             <div>
-              <p className="font-semibold leading-6">
+              <p className="text-sm font-semibold leading-6">
                 {dateTime.title}
               </p>
 
@@ -37,7 +37,7 @@ export default function Card({ event }: any) {
             </div>
 
             <div>
-              <p className="font-semibold leading-6">
+              <p className="text-sm font-semibold leading-6">
                 {location.title}
               </p>
 
