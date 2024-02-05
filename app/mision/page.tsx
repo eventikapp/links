@@ -2,7 +2,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronRightIcon, GlobeIcon, InstagramLogoIcon, VideoIcon } from '@radix-ui/react-icons'
+import { GlobeIcon, InstagramLogoIcon, VideoIcon } from '@radix-ui/react-icons'
 
 import logoMision from "@/public/logo-mision.svg"
 
@@ -12,6 +12,9 @@ import { eventsMisionCEM } from "@/data/mision"
 
 export const metadata: Metadata = {
   title: `Eventik | Mision CEM`,
+  icons: {
+    icon: '/icon-eventik.png', // /public path
+  },
 }
 
 export default function Page() {

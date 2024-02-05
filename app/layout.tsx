@@ -4,7 +4,10 @@ import "@/styles/globals.css"
 export const metadata: Metadata = {
   title: `Eventik`,
   description:
-    "Gestioná tus eventos en Eventik la plataforma que ayuda a los organizadores a crear, promocionar y vender entradas para sus eventos.",
+    "Compra tus entradas a través de Eventik.",
+  icons: {
+    icon: '/icon-eventik.png', // /public path
+  },
 }
 
 export default function RootLayout({
