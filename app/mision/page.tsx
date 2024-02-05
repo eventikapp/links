@@ -2,7 +2,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { GlobeIcon, InstagramLogoIcon, VideoIcon } from '@radix-ui/react-icons'
+import { ChevronRightIcon, GlobeIcon, InstagramLogoIcon, VideoIcon } from '@radix-ui/react-icons'
 
 import logoMision from "@/public/logo-mision.svg"
 
@@ -49,10 +49,22 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="space-y-5">
-          {eventsMisionCEM.map((event, i) => {
+        <div className="flex flex-col items-center">
+          {eventsMisionCEM.map((event) => {
             return (
-              <Card key={i} event={event} />
+              <a key={event.id} href={`#event-${event.id}`} className="flex items-center gap-x-2 hover:underline">
+                <ChevronRightIcon /> {event.title}
+              </a>
+            )
+          })}
+        </div>
+
+        <div className="space-y-5">
+          {eventsMisionCEM.map((event) => {
+            return (
+              <div key={event.id} id={`event-${event.id}`}>
+                <Card event={event} />
+              </div>
             )
           })}
         </div>
