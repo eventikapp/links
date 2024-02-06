@@ -33,7 +33,7 @@ export interface Event {
 export const eventsMisionCEM: Event[] = [
   {
     id: "1",
-    status: "draft",
+    status: "publish",
     anchor: "icea2024",
     cover: bannerMisionIntimidad,
     title: "INTIMIDAD CON EL AMADO 2024",
