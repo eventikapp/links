@@ -51,7 +51,7 @@ export const eventsMisionCEM: Event[] = [
         url: "https://eventik.app/e/intimidad-con-el-amado-2024/",
       },
       secondary: {
-        label: "🌍 Internacionales",
+        label: "🌍 Extranjeros",
         url: "https://mision-la.eventik.app/e/intimidad-con-el-amado-2024",
       },
     },
@@ -76,7 +76,7 @@ export const eventsMisionCEM: Event[] = [
         url: "https://eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey/",
       },
       secondary: {
-        label: "🌍 Internacionales",
+        label: "🌍 Extranjeros",
         url: "https://mision-la.eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey",
       },
     },
