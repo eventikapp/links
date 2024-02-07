@@ -4,8 +4,13 @@ import { ReactElement } from "react"
 import bannerMision from "@/public/banner-mision.jpg"
 import bannerMisionIntimidad from "@/public/banner-mision-intimidad.jpg"
 
+export interface EventLink {
+  url: string
+  label: string | ReactElement
+}
+
 export interface Event {
-  id: string,
+  id: string
   status: string
   anchor: string
   cover: StaticImageData
@@ -19,14 +24,8 @@ export interface Event {
     subtitle: string
   }
   links?: {
-    primary?: {
-      url: string
-      label: string | ReactElement
-    }
-    secondary?: {
-      url: string
-      label: string | ReactElement
-    }
+    primary?: EventLink
+    secondary?: EventLink
   }
 }
 
