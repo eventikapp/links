@@ -12,7 +12,7 @@ import { DialogFAQ } from "@/components/dialog-faq"
 export const metadata: Metadata = {
   title: `Eventik | EMUBA`,
   icons: {
-    icon: '/icon-eventik.png', // /public path
+    icon: "/icon-eventik.png", // /public path
   },
 }
 
