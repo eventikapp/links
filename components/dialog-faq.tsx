@@ -23,7 +23,12 @@ export function DialogFAQ({ linkWhatsApp, supportBy }: Props) {
 
   return (
     <Dialog>
-      <DialogTrigger className={cn(buttonVariants({ variant: "outline" }), "h-8 gap-x-2 px-2 shadow-sm md:h-9 md:px-4")}>
+      <DialogTrigger
+        className={cn(
+          buttonVariants({ variant: "outline" }),
+          "h-8 gap-x-2 px-2 shadow-sm md:h-9 md:px-4"
+        )}
+      >
         <QuestionMarkCircledIcon />
         Ayuda
       </DialogTrigger>
