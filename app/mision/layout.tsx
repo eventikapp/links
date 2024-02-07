@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 
-import Footer from "@/components/pages/mision/footer"
 import Header from "@/components/pages/mision/header"
 
 export const metadata: Metadata = {
@@ -19,7 +18,6 @@ export default function MisionLayout({
     <>
       <Header />
       {children}
-      <Footer />
     </>
   )
 }
