@@ -11,6 +11,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
+import { QuestionMarkCircledIcon } from "@radix-ui/react-icons"
 
 interface Props {
   linkWhatsApp: string
@@ -22,8 +23,9 @@ export function DialogFAQ({ linkWhatsApp, supportBy }: Props) {
 
   return (
     <Dialog>
-      <DialogTrigger className={cn(buttonVariants({ variant: "secondary" }))}>
-        Necesito ayuda
+      <DialogTrigger className={cn(buttonVariants({ variant: "outline" }), "h-8 gap-x-2 px-2 shadow-sm md:h-9 md:px-4")}>
+        <QuestionMarkCircledIcon />
+        Ayuda
       </DialogTrigger>
 
       <DialogContent className="max-w-md max-md:flex max-md:h-full max-md:max-h-screen max-md:max-w-full max-md:flex-col max-md:justify-center max-md:gap-12 max-md:overflow-y-scroll">

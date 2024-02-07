@@ -11,12 +11,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "./ui/button"
 
 const EventLink = ({ label, url }: EventLink) => {
   return (
     <Link
       href={url}
-      className="flex flex-1 items-center justify-center gap-x-2 rounded bg-neutral-50 px-4 py-2.5 font-medium leading-5 text-neutral-900 shadow-sm ring-1 ring-inset ring-neutral-300 hover:bg-neutral-100"
+      className={cn(buttonVariants({ variant: "outline" }), "flex-1 shadow-sm")}
       target="_blank"
     >
       {label}
@@ -28,7 +30,7 @@ export default function EventCard({ event }: { event: Event }) {
   const { cover, title, dateTime, location, links } = event
 
   return (
-    <Card className="w-full overflow-hidden rounded-none border-0 shadow-none md:max-w-[480px] md:rounded-xl md:border">
+    <Card className="w-full overflow-hidden rounded-none border-0 shadow-none  md:rounded-xl md:border">
       <div className="relative h-[170px] w-full overflow-hidden sm:h-[200px]">
         <Image
           src={cover}
@@ -36,7 +38,9 @@ export default function EventCard({ event }: { event: Event }) {
           className="absolute h-full w-full"
           style={{ objectFit: "cover" }}
           fill={true}
+          sizes="1080px"
           quality={100}
+          priority
         />
       </div>
 
