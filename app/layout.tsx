@@ -3,10 +3,9 @@ import "@/styles/globals.css"
 
 export const metadata: Metadata = {
   title: `Eventik`,
-  description:
-    "Compra tus entradas a través de Eventik.",
+  description: "Compra tus entradas a través de Eventik.",
   icons: {
-    icon: '/icon-eventik.png', // /public path
+    icon: "/icon-eventik.png", // /public path
   },
 }
 

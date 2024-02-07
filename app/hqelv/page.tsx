@@ -12,7 +12,7 @@ import { DialogFAQ } from "@/components/dialog-faq"
 export const metadata: Metadata = {
   title: `Eventik | HQELV`,
   icons: {
-    icon: '/icon-eventik.png', // /public path
+    icon: "/icon-eventik.png", // /public path
   },
 }
 
@@ -68,7 +68,10 @@ export default function Page() {
         </div>
 
         <div className="flex items-center gap-2">
-          <DialogFAQ linkWhatsApp="https://wa.me/34687125934"  supportBy="organizer" />
+          <DialogFAQ
+            linkWhatsApp="https://wa.me/34687125934"
+            supportBy="organizer"
+          />
         </div>
       </div>
     </div>
