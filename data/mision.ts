@@ -39,7 +39,7 @@ export const eventsMisionCEM: Event[] = [
     title: "INTIMIDAD CON EL AMADO 2024",
     dateTime: {
       title: "Jueves, 18 de Julio 2024",
-      subtitle: "17:00h al Sábado, 20 de Enero 2024, 22:00h",
+      subtitle: "17:00h al Sábado, 20 de Julio 2024, 22:00h",
     },
     location: {
       title: "Centro Costa Salguero",
