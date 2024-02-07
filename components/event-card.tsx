@@ -29,7 +29,16 @@ export default function EventCard({ event }: { event: Event }) {
 
   return (
     <Card className="w-full overflow-hidden rounded-none border-0 shadow-none md:max-w-[480px] md:rounded-xl md:border">
-      <Image src={cover} alt="cover event" />
+      <div className="relative h-[170px] w-full overflow-hidden md:h-[200px]">
+        <Image
+          src={cover}
+          alt="cover event"
+          className="absolute h-full w-full"
+          style={{ objectFit: "cover" }}
+          fill={true}
+          quality={100}
+        />
+      </div>
 
       <CardHeader className="p-4 md:px-6">
         <CardTitle className="text-xl font-bold leading-8">{title}</CardTitle>
