@@ -50,7 +50,7 @@ export const eventsHQELV: Event[] = [
       },
       secondary: {
         label: "Entradas + Hospedaje",
-        url: "https://es.eventik.app/e/hqelv24-congreso/",
+        url: "https://es.eventik.app/e/congreso-hospedaje-hqelv24/",
        
       },
     },
