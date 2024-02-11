@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image"
 import { ReactElement } from "react"
 
-import bannerHQELV from "@/public/banner-HQELV.jpg"
+import bannerHQELV from "@/public/banner-hqelv.jpg"
 
 export interface EventLink {
   url: string
