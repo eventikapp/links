@@ -25,7 +25,6 @@ export interface Event {
   links?: {
     primary?: EventLink
     secondary?: EventLink
-    terciary?: EventLink
   }
 }
 
@@ -47,16 +46,12 @@ export const eventsHQELV: Event[] = [
     links: {
       primary: {
         label: "Entradas",
-        url: "https://es.eventik.app/e/hqelv24-congreso/",
+        url: "https://es.eventik.app/e/entradas-congreso-hqelv24/",
       },
       secondary: {
         label: "Entradas + Hospedaje",
         url: "https://es.eventik.app/e/hqelv24-congreso/",
        
-      },
-      terciary: {
-        label: "Pre-congreso + Congreso con Hospedaje",
-        url: "https://es.eventik.app/e/hqelv-pre-congreso-congreso/",
       },
     },
   },
