@@ -95,18 +95,6 @@ export default function EventCard({ event }: { event: Event }) {
                 url={links.secondary.url}
               />
             )}
-            {links.terciary && (
-              <EventLink
-                label={links.terciary.label}
-                url={links.terciary.url}
-              />
-            )}
-            {links.quaternary && (
-              <EventLink
-                label={links.quaternary.label}
-                url={links.quaternary.url}
-              />
-            )}
           </div>
         )}
       </CardFooter>
