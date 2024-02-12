@@ -3,7 +3,7 @@ import Image from "next/image"
 import { GlobeIcon, InstagramLogoIcon, VideoIcon } from "@radix-ui/react-icons"
 
 import { DialogFAQ } from "@/components/dialog-faq"
-import logoMision from "@/public/logo-mision.svg"
+import logoHqelv from "@/public/logo-hqelv.jpg"
 
 export default function Header() {
   return (
@@ -12,8 +12,8 @@ export default function Header() {
         <nav>
           <Link href="/">
             <Image
-              src={logoMision}
-              alt="Logo Mision"
+              src={logoHqelv}
+              alt="Hasta que Él venga"
               width={72}
               height={72}
               priority
