@@ -55,29 +55,4 @@ export const eventsMisionCEM: Event[] = [
       },
     },
   },
-  {
-    id: "2",
-    status: "publish",
-    anchor: "gi-jeps2024",
-    cover: bannerMision,
-    title: "GI / JEPS 2024 – EN LAS CÁMARAS DEL REY",
-    dateTime: {
-      title: "Lunes, 19 de Febrero 2024",
-      subtitle: "10:00h al Sábado, 24 de Febrero 2024, 23:00h",
-    },
-    location: {
-      title: "Iglesia El Encuentro",
-      subtitle: "Arana 1372, Luis Guillón, Buenos Aires.",
-    },
-    links: {
-      primary: {
-        label: "🇦🇷 Argentinos",
-        url: "https://eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey/",
-      },
-      secondary: {
-        label: "🌍 Extranjeros",
-        url: "https://mision-la.eventik.app/e/gi-jeps-2024-en-las-camaras-del-rey",
-      },
-    },
-  },
 ]
