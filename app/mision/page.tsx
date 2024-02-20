@@ -10,7 +10,7 @@ export default function Page() {
 
   return (
     <main className="flex items-center justify-center md:px-8">
-      <section className="w-full max-w-[984px]">
+      <section className="w-full max-w-[640px]">
         <div
           className={cn("grid grid-cols-1 gap-6", {
             "grid-cols-1 md:grid-cols-2": quantityPublishEvents > 1,
