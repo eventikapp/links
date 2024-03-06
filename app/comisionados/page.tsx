@@ -1,10 +1,10 @@
 import EventCard from "@/components/event-card"
-import { eventsHQELV } from "@/data/hqelv"
+import { eventsComisionados } from "@/data/comisionados"
 import { cn } from "@/lib/utils"
 
 export default function Page() {
   // get quantity published events
-  const quantityPublishEvents = eventsHQELV.filter(
+  const quantityPublishEvents = eventsComisionados.filter(
     (event) => event.status === "publish"
   ).length
 
@@ -16,7 +16,7 @@ export default function Page() {
             "grid-cols-1 md:grid-cols-2": quantityPublishEvents > 1,
           })}
         >
-          {eventsHQELV
+          {eventsComisionados
             .filter((event) => event.status === "publish")
             .map((event) => {
               return (

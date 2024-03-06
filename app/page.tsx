@@ -50,6 +50,15 @@ export default function Page() {
           >
             #HQÉLV’24
           </Link>
+          <Link
+            href="/comisionados"
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "w-full max-w-xl text-lg"
+            )}
+          >
+            Comisionados
+          </Link>
         </div>
 
         <div className="flex items-center gap-2">
