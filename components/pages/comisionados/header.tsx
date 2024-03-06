@@ -15,12 +15,13 @@ export default function Header() {
               src={LogoComisionados}
               alt="Logo Comisionados"
               width={72}
+              className="rounded-md"
               height={72}
               priority
             />
           </Link>
 
-          <div className="absolute -top-4 right-4 md:-top-8 md:right-8 lg:right-0">
+          <div className="absolute -top-4 right-4 md:-top-8 md:right-8 lg:right-0 border">
             <DialogFAQ linkWhatsApp="https://wa.me/5491136979045" />
           </div>
         </nav>
