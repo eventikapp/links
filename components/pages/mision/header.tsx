@@ -28,7 +28,7 @@ export default function Header() {
         <section className="flex flex-col items-center justify-center">
           <h2 className="text-lg font-bold leading-7">MiSion CEM</h2>
           <p className="leading-5 text-muted-foreground">
-            Centro de Entretenimiento Ministerial
+            Centro de Entrenamiento Ministerial
           </p>
         </section>
 
