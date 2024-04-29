@@ -42,7 +42,7 @@ export default function Page() {
           </h2>
 
           <Link
-            href="https://tomatulugar-ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
+            href="https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino"
             className={cn(
               buttonVariants({ size: "lg" }),
               "w-full max-w-xl text-lg"
