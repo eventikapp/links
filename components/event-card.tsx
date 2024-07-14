@@ -31,7 +31,7 @@ export default function EventCard({ event }: { event: Event }) {
 
   return (
     <Card className="w-full overflow-hidden rounded-none border-0 shadow-none  md:rounded-xl md:border">
-      <div className="relative h-[170px] w-full overflow-hidden sm:h-[200px]">
+      <div className="relative h-[200px] w-full overflow-hidden sm:h-[200px]">
         <Image
           src={cover}
           alt="cover event"
