@@ -1,7 +1,8 @@
-import type { Metadata } from "next"
+import type { Metadata } from "next";
+import Header from "@/components/pages/hillsong/header";
+import bannerSisterhood from "@/public/hillsong-sisterhood-conference.png";
 
-import Header from "@/components/pages/hillsong/header"
-import bannerSisterhood from "@/public/hillsong-sisterhood-conference.png"
+const bannerSisterhoodUrl = require('@/public/hillsong-sisterhood-conference.png').default;
 
 export const metadata: Metadata = {
   title: `Eventik | Hillsong`,
@@ -10,29 +11,29 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://www.eventik.com/hillsong', // Reemplaza con la URL real de tu página
+    url: 'https://links.eventik.app/hillsong', // Reemplaza con la URL real de tu página
     title: 'Sisterhood Conference',
     description: 'Organizador: Hillsong',
     images: [
       {
-        url: bannerSisterhood, // Reemplaza con la ruta real de tu imagen Open Graph
+        url: bannerSisterhoodUrl, // Usar la URL correcta de la imagen Open Graph
         width: 1200,
         height: 630,
         alt: 'Conferencia Sisterhood',
       },
     ],
   },
-}
+};
 
 export default function HillsongLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <>
       <Header />
       {children}
     </>
-  )
+  );
 }
