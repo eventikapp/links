@@ -3,7 +3,7 @@ import Image from "next/image"
 import { GlobeIcon, InstagramLogoIcon, VideoIcon } from "@radix-ui/react-icons"
 
 import { DialogFAQ } from "@/components/dialog-faq"
-import logoMision from "@/public/logo-hillsong.jpg"
+import logoHillsong from "@/public/logo-hillsong.jpg"
 
 export default function Header() {
   return (
