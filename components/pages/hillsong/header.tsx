@@ -21,7 +21,7 @@ export default function Header() {
           </Link>
 
           <div className="absolute -top-4 right-4 md:-top-8 md:right-8 lg:right-0">
-            <DialogFAQ />
+            <DialogFAQ linkWhatsApp="https://wa.me/5491124058816" />
           </div>
         </nav>
 
