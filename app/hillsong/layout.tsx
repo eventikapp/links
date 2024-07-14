@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/pages/hillsong/header";
-import bannerSisterhood from "@/public/hillsong-sisterhood-conference.png";
 
-const bannerSisterhoodUrl = require('@/public/hillsong-sisterhood-conference.png').default;
+const bannerSisterhoodUrl = "/hillsong-sisterhood-conference.png";
 
 export const metadata: Metadata = {
   title: `Eventik | Hillsong`,
