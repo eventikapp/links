@@ -40,8 +40,8 @@ export const eventsHillsong: Event[] = [
       subtitle: "19:30 al Sábado, 28 de Septiembre 2024, 22:00",
     },
     location: {
-      title: "Sheraton Buenos Aires",
-      subtitle: "San Martin 1225, Buenos Aires, Argentina",
+      title: "Teatro Avenida",
+      subtitle: "Av. de Mayo 1222, CABA, Argentina",
     },
     links: {
       primary: {
