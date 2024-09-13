@@ -12,7 +12,7 @@ export default function TomatulugarPage() {
     <EventPage
       logo={logoTomatulugar}
       banner={bannerTomatulugar}
-      title="Conferencia Tomatulugar 2024: Preparen el Camino"
+      title="Cuidado de niños › Conferencia TOMATULUGAR 2024"
       dateTime={{
         title: "Jueves, 3 de Octubre 2024",
         subtitle: "13:00 al Sábado, 5 de Octubre 2024, 21:00",
@@ -24,12 +24,13 @@ export default function TomatulugarPage() {
       whatsAppLink="https://wa.me/543516344971"
       primaryLink={{
         label: "🇦🇷 Argentinos",
-        url: "https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino",
+        url: "https://ar.eventik.app/e/cuidado-de-ninos-conferencia-tomatulugar-2024",
       }}
       secondaryLink={{
         label: "🌍 Internacionales",
-        url: "https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino",
+        url: "https://la.eventik.app/e/cuidado-de-ninos-conferencia-tomatulugar-2024",
       }}
+
     />
   )
 }
