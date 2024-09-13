@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { CalendarIcon } from "@radix-ui/react-icons"
 import { MapPin } from "lucide-react"
@@ -19,8 +19,8 @@ interface EventLink {
 }
 
 interface EventPageProps {
-  logo: string
-  banner?: string
+  logo: string | StaticImageData
+  banner?: string | StaticImageData
   title: string
   dateTime: {
     title: string
@@ -63,7 +63,7 @@ export default function EventPage({
         <Link href="/" className="relative mt-4 block overflow-hidden rounded-lg bg-zinc-200 shadow-md shadow-zinc-200 sm:rounded-xl lg:rounded-xl"
         >
           <Image
-            src={logo}
+            src={typeof logo === 'string' ? logo : logo.src}
             alt={title}
             width={120}
             height={120}
@@ -77,7 +77,7 @@ export default function EventPage({
           {banner && (
             <div className="relative h-[220px] w-full overflow-hidden sm:h-[236px]">
               <Image
-                src={banner}
+                src={typeof banner === 'string' ? banner : banner.src}
                 alt={`${title} banner`}
                 className="absolute h-full w-full"
                 style={{ objectFit: "cover" }}
