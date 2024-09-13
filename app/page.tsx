@@ -1,8 +1,15 @@
 import Image from "next/image"
-import logoEventik from "@/public/logo-eventik.svg"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import logoEventik from "@/public/logo-eventik.svg"
+
+const events = [
+  { name: "TOMATULUGAR", path: "/tomatulugar" },
+  { name: "MiSion CEM", path: "/mision" },
+  { name: "#HQÉLV'24", path: "/hqelv" },
+  { name: "Comisionados", path: "/comisionados" },
+]
 
 export default function Page() {
   return (
@@ -23,42 +30,18 @@ export default function Page() {
             Eventos
           </h2>
 
-          <Link
-            href="/tomatulugar"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "w-full max-w-xl text-lg"
-            )}
-          >
-            TOMATULUGAR
-          </Link>
-          <Link
-            href="/mision"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "w-full max-w-xl text-lg"
-            )}
-          >
-            MiSion CEM
-          </Link>
-          <Link
-            href="/hqelv"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "w-full max-w-xl text-lg"
-            )}
-          >
-            #HQÉLV’24
-          </Link>
-          <Link
-            href="/comisionados"
-            className={cn(
-              buttonVariants({ size: "lg" }),
-              "w-full max-w-xl text-lg"
-            )}
-          >
-            Comisionados
-          </Link>
+          {events.map((event) => (
+            <Link
+              key={event.path}
+              href={event.path}
+              className={cn(
+                buttonVariants({ size: "lg" }),
+                "w-full max-w-xl text-lg"
+              )}
+            >
+              {event.name}
+            </Link>
+          ))}
         </div>
 
         <div className="flex items-center gap-2">
