@@ -106,7 +106,7 @@ export default function OrganizerPage() {
         </div>
       </header>
       <div className="m-8 mx-auto overflow-auto">
-        <div className="flex w-full snap-x snap-mandatory scroll-pl-6 gap-8 overflow-x-auto pb-8">
+        <div className="flex flex-wrap justify-center gap-8 pb-8">
           {events.map((event, index) => (
             <div key={index} className="shrink-0 snap-start">
               <EventPage
