@@ -4,26 +4,25 @@ import Link from "next/link"
 import { GlobeIcon, InstagramLogoIcon, VideoIcon } from "@radix-ui/react-icons"
 import EventPage from "@/components/EventPage"
 import { DialogFAQ } from "@/components/dialog-faq"
-import logoTomatulugar from "@/public/logo-ttl.jpg"
-import bannerTomatulugar from "@/public/banner-tomatulugar.jpg"
+import logo from "@/public/logo-mision.svg"
+import bannerGijeps from "@/public/banner-gi-jeps.jpg"
 
 // Asegúrate de reemplazar 'https://tu-dominio.com' con tu dominio real en producción
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: `Eventik | Tomatulugar`,
+  title: `Eventik | MiSion CEM`,
   openGraph: {
-    title: "Conferencia Tomatulugar 2024: Preparen el Camino",
-    description:
-      "Sólo Jesús merece brillar. Únete a nosotros en la Conferencia Tomatulugar 2024.",
+    title: "MiSion CEM",
+    description: "Centro de Entrenamiento Ministerial.",
     type: "website",
     images: [
       {
-        url: bannerTomatulugar.src,
+        url: bannerGijeps.src,
         width: 1200,
         height: 630,
-        alt: "Conferencia Tomatulugar 2024: Preparen el Camino",
+        alt: "Centro de Entrenamiento Ministerial.",
       },
     ],
   },
@@ -31,14 +30,17 @@ export const metadata: Metadata = {
 
 // Información del organizador
 const organizer = {
-  name: "Tomatulugar",
-  description: "Sólo Jesús merece brillar.",
-  logo: logoTomatulugar,
+  name: "MiSion CEM",
+  description: "Centro de Entrenamiento Ministerial.",
+  logo: logo,
   whatsAppLink: "https://wa.me/543516344971",
   socialLinks: [
-    { icon: GlobeIcon, url: "https://tomatulugar.com" },
-    { icon: InstagramLogoIcon, url: "https://www.instagram.com/tomatulugar" },
-    { icon: VideoIcon, url: "https://www.youtube.com/@Tomatulugar" },
+    { icon: GlobeIcon, url: "https://misioninstituto.com" },
+    {
+      icon: InstagramLogoIcon,
+      url: "https://www.instagram.com/mision_instituto",
+    },
+    { icon: VideoIcon, url: "https://www.youtube.com/@misioncem" },
   ],
 }
 
@@ -46,24 +48,24 @@ const organizer = {
 const events = [
   {
     title: "Conferencia Tomatulugar 2024: Preparen el Camino",
-    banner: bannerTomatulugar,
+    banner: bannerGijeps,
     dateTime: {
-      startDate: "2024-10-03",
-      startTime: "13:00",
-      endDate: "2024-10-05",
-      endTime: "21:00",
+      startDate: "2025-02-24",
+      startTime: "10:00",
+      endDate: "2025-03-01",
+      endTime: "23:00",
     },
     location: {
-      title: "Complejo Ferial",
-      subtitle: "Ramón Cárcano, Córdoba, Argentina.",
+      title: "Iglesia El Encuentro",
+      subtitle: "Arana 1372, Luis Guillón, Buenos Aires.",
     },
     primaryLink: {
       label: "🇦🇷 Argentinos",
-      url: "https://ar.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino",
+      url: "https://eventik.app/e/gi-jeps-2025",
     },
     secondaryLink: {
       label: "🌍 Internacionales",
-      url: "https://la.eventik.app/e/conferencia-tomatulugar-2024-preparen-el-camino",
+      url: "https://mision-la.eventik.app/e/gi-jeps-2025",
     },
   },
 ]
