@@ -6,7 +6,7 @@ import logoEventik from "@/public/logo-eventik.svg"
 
 const events = [
   { name: "TOMATULUGAR", path: "/tomatulugar" },
-  { name: "MiSion CEM", path: "/mision" },
+  { name: "MiSion CEM", path: "/misioncem" },
   { name: "#HQÉLV'24", path: "/hqelv" },
   { name: "Comisionados", path: "/comisionados" },
 ]
