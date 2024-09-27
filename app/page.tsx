@@ -1,14 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
 import logoEventik from "@/public/logo-eventik.svg"
 
-const events = [
-  { name: "TOMATULUGAR", path: "/tomatulugar" },
-  { name: "MiSion CEM", path: "/misioncem" },
-  { name: "#HQÉLV'24", path: "/hqelv" },
-  { name: "Comisionados", path: "/comisionados" },
+// Añadir un array de organizadores con sus logos, nombres y URLs
+const organizers = [
+  { name: "TOMATULUGAR", logo: "/logo-ttl.jpg", url: "/tomatulugar" },
+  { name: "MiSion CEM", logo: "/logo-mision.svg", url: "/misioncem" },
+  { name: "Hillsong", logo: "/logo-hillsong.jpg", url: "/hillsong" },
+  {
+    name: "Comisionados",
+    logo: "/logo-comisionados.png",
+    url: "/comisionados",
+  },
 ]
 
 export default function Page() {
@@ -25,21 +28,24 @@ export default function Page() {
           />
         </Link>
 
-        <div className="flex w-full flex-col items-center gap-4">
-          <h2 className="text-center text-base font-semibold md:text-xl">
-            Eventos
-          </h2>
-
-          {events.map((event) => (
+        {/* Añadir grilla de logos de organizadores */}
+        <div className="grid w-full max-w-2xl grid-cols-2 gap-2 md:grid-cols-4">
+          {organizers.map((org) => (
             <Link
-              key={event.path}
-              href={event.path}
-              className={cn(
-                buttonVariants({ size: "lg" }),
-                "w-full max-w-xl text-lg"
-              )}
+              key={org.name}
+              href={org.url}
+              className="flex flex-col items-center justify-center gap-2"
             >
-              {event.name}
+              <Image
+                src={org.logo}
+                alt={`Logo de ${org.name}`}
+                width={72}
+                height={72}
+                className="rounded-lg shadow"
+              />
+              <span className="text-center text-sm font-medium">
+                {org.name}
+              </span>
             </Link>
           ))}
         </div>
