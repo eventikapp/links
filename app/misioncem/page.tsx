@@ -47,7 +47,7 @@ const organizer = {
 // Información de los eventos
 const events = [
   {
-    title: "Conferencia Tomatulugar 2024: Preparen el Camino",
+    title: "GI / JEPS 2025: Mi ciudad, su morada",
     banner: bannerGijeps,
     dateTime: {
       startDate: "2025-02-24",
