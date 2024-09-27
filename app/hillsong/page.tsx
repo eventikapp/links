@@ -1,32 +1,69 @@
-import EventCard from "@/components/event-card"
-import { eventsHillsong } from "@/data/hillsong"
-import { cn } from "@/lib/utils"
+import type { Metadata } from "next"
+import { GlobeIcon, InstagramLogoIcon, VideoIcon } from "@radix-ui/react-icons"
+import OrganizerPage from "@/components/OrganizerPage"
+import logo from "@/public/logo-hillsong.jpg"
+import bannerSisterhood from "@/public/hillsong-sisterhood-conference.png"
 
-export default function Page() {
-  // get quantity published events
-  const quantityPublishEvents = eventsHillsong.filter(
-    (event) => event.status === "publish"
-  ).length
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
 
-  return (
-    <main className="flex items-center justify-center md:px-8">
-      <section className="w-full max-w-[520px]">
-        <div
-          className={cn("grid grid-cols-1 gap-6", {
-            "grid-cols-1 md:grid-cols-2": quantityPublishEvents > 1,
-          })}
-        >
-          {eventsHillsong
-            .filter((event) => event.status === "publish")
-            .map((event) => {
-              return (
-                <div key={event.id} id={`${event.anchor}`}>
-                  <EventCard event={event} />
-                </div>
-              )
-            })}
-        </div>
-      </section>
-    </main>
-  )
+export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
+  title: `Eventik | Hillsong`,
+  openGraph: {
+    title: "Hillsong",
+    description: "Una Iglesia Global",
+    type: "website",
+    images: [
+      {
+        url: bannerSisterhood.src,
+        width: 1200,
+        height: 630,
+        alt: "Una Iglesia Global",
+      },
+    ],
+  },
+}
+
+const organizer = {
+  name: "Hillsong",
+  description: "Bienvenido a casa",
+  logo: logo,
+  whatsAppLink: "https://wa.me/5491136979045",
+  socialLinks: [
+    { icon: GlobeIcon, url: "https://hillsong.com/argentina/" },
+    {
+      icon: InstagramLogoIcon,
+      url: "https://www.instagram.com/hillsongbuenosaires/",
+    },
+    { icon: VideoIcon, url: "https://www.youtube.com/@HillsongBuenosAires" },
+  ],
+}
+
+const events = [
+  {
+    title: "Sisterhood Conference",
+    banner: bannerSisterhood,
+    dateTime: {
+      startDate: "2024-09-27",
+      startTime: "19:30",
+      endDate: "2024-09-28",
+      endTime: "22:00",
+    },
+    location: {
+      title: "Teatro Avenida",
+      subtitle: "Av. de Mayo 1222, CABA, Argentina",
+    },
+    primaryLink: {
+      label: "🇦🇷 Argentinos",
+      url: "https://hillsong.eventik.app/e/sisterhood-conference/",
+    },
+    secondaryLink: {
+      label: "🌍 Extranjeros",
+      url: "https://hillsong-la.eventik.app/e/sisterhood-conference/",
+    },
+  },
+]
+
+export default function HillsongPage() {
+  return <OrganizerPage organizer={organizer} events={events} />
 }
