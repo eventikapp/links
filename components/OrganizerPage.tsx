@@ -30,6 +30,13 @@ interface Event {
     label: string
     url: string
   }
+  status: "upcoming" | "ongoing" | "ended" // Add this line
+  label: string | null // Add this line
+}
+
+interface ProcessedEvent extends Event {
+  status: "upcoming" | "ongoing" | "ended"
+  label: string | null
 }
 
 interface OrganizerPageProps {
@@ -40,7 +47,7 @@ interface OrganizerPageProps {
     whatsAppLink: string
     socialLinks: SocialLink[]
   }
-  events: Event[]
+  events: ProcessedEvent[]
 }
 
 export default function OrganizerPage({
@@ -86,8 +93,13 @@ export default function OrganizerPage({
       <div className="m-8 mx-auto overflow-auto">
         <div className="flex flex-wrap justify-center gap-8 pb-8">
           {events.map((event, index) => (
-            <div key={index} className="shrink-0 snap-start">
+            <div key={index} className="relative shrink-0 snap-start">
               <EventPage {...event} />
+              {event.label && (
+                <div className="absolute right-2 top-2 rounded bg-black bg-opacity-70 px-2 py-1 text-white">
+                  {event.label}
+                </div>
+              )}
             </div>
           ))}
         </div>
