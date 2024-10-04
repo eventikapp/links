@@ -53,7 +53,7 @@ interface ProcessedEvent extends Event {
 
 const events: Event[] = [
   {
-    title: "ConfereCOncia TOMATULUGAR 2025",
+    title: "CONFERENCIA TOMATULUGAR 2025",
     banner: bannerTomatulugar,
     dateTime: {
       startDate: "2025-10-09",
