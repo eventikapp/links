@@ -73,7 +73,7 @@ const events: Event[] = [
       label: "🌍 Internacionales",
       url: "https://la.eventik.app/e/conferencia-tomatulugar-2025",
     },
-    publishStatus: "published", // New field: 'published' or 'draft'
+    publishStatus: "draft", // New field: 'published' or 'draft'
   },
 ]
 
