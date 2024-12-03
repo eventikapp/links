@@ -70,11 +70,11 @@ const events: Event[] = [
     },
     primaryLink: {
       label: "🇦🇷 Argentinos",
-      url: "https://eventik.app/e/gi-jeps-2025",
+      url: "https://eventik.app/gi-jeps-2025",
     },
     secondaryLink: {
       label: "🌍 Internacionales",
-      url: "https://mision-la.eventik.app/e/gi-jeps-2025",
+      url: "https://mision-la.eventik.app/gi-jeps-2025",
     },
     publishStatus: "published", // New field: 'published' or 'draft'
   },
