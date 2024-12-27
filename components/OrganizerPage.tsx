@@ -82,7 +82,7 @@ export default function OrganizerPage({
           <ol className="flex gap-x-4">
             {organizer.socialLinks.map((link, index) => (
               <li key={index}>
-                <Link href={link.url} target="_blank">
+                <Link href={link.url} target="_blank" rel="noopener noreferrer">
                   <link.icon className="h-5 w-5" />
                 </Link>
               </li>

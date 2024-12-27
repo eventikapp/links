@@ -4,9 +4,8 @@ import { useEffect, useState } from "react"
 import { GlobeIcon, InstagramLogoIcon, VideoIcon } from "@radix-ui/react-icons"
 import OrganizerPage from "@/components/OrganizerPage"
 import logo from "@/public/logo-hillsong.jpg"
-import bannerSisterhood from "@/public/hillsong-sisterhood-conference.png"
-// Remove this import as it's not being used
-// import { formatInTimeZone } from 'date-fns-tz'
+import bannerSisterhood from "@/public/hillsong-casa-abierta-2025.png"
+import { StaticImageData } from "next/image"
 
 const organizer = {
   name: "Hillsong",
@@ -26,7 +25,7 @@ const organizer = {
 // Update the Event interface
 interface Event {
   title: string
-  banner: any // Replace 'any' with the correct type for your banner
+  banner: StaticImageData
   dateTime: {
     startDate: string
     startTime: string
@@ -56,12 +55,12 @@ interface ProcessedEvent extends Event {
 
 const events: Event[] = [
   {
-    title: "Sisterhood Conference",
+    title: "Casa Abierta 2025",
     banner: bannerSisterhood,
     dateTime: {
-      startDate: "2024-09-27",
-      startTime: "19:30",
-      endDate: "2024-09-28",
+      startDate: "2025-02-27",
+      startTime: "19:00",
+      endDate: "2025-03-01",
       endTime: "22:00",
     },
     location: {
@@ -70,11 +69,11 @@ const events: Event[] = [
     },
     primaryLink: {
       label: "🇦🇷 Argentinos",
-      url: "https://hillsong.eventik.app/e/sisterhood-conference/",
+      url: "https://hillsong.eventik.app/e/casa-abierta-2025/",
     },
     secondaryLink: {
       label: "🌍 Extranjeros",
-      url: "https://hillsong-la.eventik.app/e/sisterhood-conference/",
+      url: "https://hillsong-la.eventik.app/e/casa-abierta-2025/",
     },
     publishStatus: "published", // New field: 'published' or 'draft'
   },
