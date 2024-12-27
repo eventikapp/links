@@ -30,11 +30,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
         subtitle: "Arana 1372, Luis Guillón, Buenos Aires.",
       },
       primaryLink: {
-        label: "🇦🇷 Argentinos",
+        label: "Residentes 🇦🇷 (ARS)",
         url: "https://eventik.app/gi-jeps-2025",
       },
       secondaryLink: {
-        label: "🌍 Internacionales",
+        label: "Resto del 🌍 (USD)",
         url: "https://mision-la.eventik.app/gi-jeps-2025",
       },
       publishStatus: "published",

@@ -30,11 +30,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
         subtitle: "Av. de Mayo 1222, CABA, Argentina",
       },
       primaryLink: {
-        label: "🇦🇷 Argentinos",
+        label: "Residentes 🇦🇷 (ARS)",
         url: "https://hillsong.eventik.app/e/casa-abierta-2025/",
       },
       secondaryLink: {
-        label: "🌍 Extranjeros",
+        label: "Resto del 🌍 (USD)",
         url: "https://hillsong-la.eventik.app/e/casa-abierta-2025/",
       },
       publishStatus: "published",
