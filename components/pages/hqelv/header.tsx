@@ -22,9 +22,9 @@ export default function Header() {
 
           <div className="absolute -top-4 right-4 md:-top-8 md:right-8 lg:right-0">
             <DialogFAQ
-            linkWhatsApp="https://wa.me/34687125934"
-            supportBy="organizer"
-          />
+              linkWhatsApp="https://wa.me/34687125934"
+              supportType="organizer"
+            />
           </div>
         </nav>
 
@@ -38,22 +38,19 @@ export default function Header() {
         <ol className="flex gap-x-4">
           <li>
             <Link href="https://www.hastaqueelvenga.es/" target="_blank">
-              <GlobeIcon className="h-5 w-5" />
+              <GlobeIcon className="size-5" />
             </Link>
           </li>
 
           <li>
-            <Link
-              href="https://www.instagram.com/hqelv/"
-              target="_blank"
-            >
-              <InstagramLogoIcon className="h-5 w-5" />
+            <Link href="https://www.instagram.com/hqelv/" target="_blank">
+              <InstagramLogoIcon className="size-5" />
             </Link>
           </li>
 
           <li>
             <Link href="https://www.youtube.com/@hqelv" target="_blank">
-              <VideoIcon className="h-5 w-5" />
+              <VideoIcon className="size-5" />
             </Link>
           </li>
         </ol>

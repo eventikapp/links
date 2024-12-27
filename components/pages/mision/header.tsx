@@ -35,7 +35,7 @@ export default function Header() {
         <ol className="flex gap-x-4">
           <li>
             <Link href="https://misioninstituto.com/" target="_blank">
-              <GlobeIcon className="h-5 w-5" />
+              <GlobeIcon className="size-5" />
             </Link>
           </li>
 
@@ -44,13 +44,13 @@ export default function Header() {
               href="https://www.instagram.com/mision_instituto/"
               target="_blank"
             >
-              <InstagramLogoIcon className="h-5 w-5" />
+              <InstagramLogoIcon className="size-5" />
             </Link>
           </li>
 
           <li>
             <Link href="https://www.youtube.com/MiSionCEM" target="_blank">
-              <VideoIcon className="h-5 w-5" />
+              <VideoIcon className="size-5" />
             </Link>
           </li>
         </ol>

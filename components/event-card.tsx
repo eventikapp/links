@@ -35,7 +35,7 @@ export default function EventCard({ event }: { event: Event }) {
         <Image
           src={cover}
           alt="cover event"
-          className="absolute h-full w-full"
+          className="absolute size-full"
           style={{ objectFit: "cover" }}
           fill={true}
           sizes="1080px"
@@ -50,8 +50,8 @@ export default function EventCard({ event }: { event: Event }) {
 
       <CardContent className="space-y-3 p-4 pt-0 md:px-6">
         <div className="flex items-center gap-x-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-neutral-200 p-2">
-            <CalendarIcon className="h-5 w-5" />
+          <div className="flex size-9 items-center justify-center rounded-md bg-neutral-200 p-2">
+            <CalendarIcon className="size-5" />
           </div>
 
           <div>
@@ -64,8 +64,8 @@ export default function EventCard({ event }: { event: Event }) {
         </div>
 
         <div className="flex items-center gap-x-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-md bg-neutral-200 p-2">
-            <MapPin className="h-5 w-5" />
+          <div className="flex size-9 items-center justify-center rounded-md bg-neutral-200 p-2">
+            <MapPin className="size-5" />
           </div>
 
           <div>

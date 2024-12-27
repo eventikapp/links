@@ -1,97 +1,79 @@
-import Link from "next/link"
-import { CreditCard, Ticket, Info } from "lucide-react"
-
-import { buttonVariants } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
-  DialogTrigger,
   DialogTitle,
+  DialogTrigger,
 } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
-import { QuestionMarkCircledIcon } from "@radix-ui/react-icons"
+import { QuestionMarkCircledIcon, Cross2Icon } from "@radix-ui/react-icons"
 
 interface Props {
   linkWhatsApp: string
-  supportBy?: string
+  supportType?: "organizer" | "eventik"
+  className?: string
 }
 
-export function DialogFAQ({ linkWhatsApp, supportBy }: Props) {
-  const useWhatsAppLink = supportBy === "organizer"
+const EVENTIK_WHATSAPP =
+  "https://wa.me/5491124058816?text=Hola,%20necesito%20ayuda%20con%20la%20compra%20de%20mi%20entrada"
+
+export function DialogFAQ({
+  linkWhatsApp,
+  supportType = "eventik",
+  className,
+}: Props) {
+  const whatsappLink =
+    supportType === "organizer" ? linkWhatsApp : EVENTIK_WHATSAPP
 
   return (
     <Dialog>
       <DialogTrigger
         className={cn(
-          buttonVariants({ variant: "outline" }),
-          "h-8 gap-x-2 px-2 shadow-sm md:h-9 md:px-4"
+          "flex items-center gap-x-2 rounded-lg bg-neutral-100 px-3 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-200",
+          className
         )}
       >
-        <QuestionMarkCircledIcon />
+        <QuestionMarkCircledIcon className="h-5 w-5" />
         Ayuda
       </DialogTrigger>
-
-      <DialogContent className="max-w-md max-md:flex max-md:h-full max-md:max-h-screen max-md:max-w-full max-md:flex-col max-md:justify-center max-md:gap-12 max-md:overflow-y-scroll">
+      <DialogContent>
         <DialogHeader>
           <DialogTitle>¿Necesitas ayuda?</DialogTitle>
           <DialogDescription>
-            Indicanos el motivo principal para poder ayudarte
+            Si tienes alguna duda o problema con tu compra, no dudes en
+            contactarnos.
           </DialogDescription>
         </DialogHeader>
-
-        <div className="grid gap-4 rounded-md border px-2 md:gap-2">
-          <Link
-            href={
-              useWhatsAppLink
-                ? linkWhatsApp
-                : "https://wa.me/5491124058816?text=Hola,%20necesito%20ayuda%20con%20la%20compra%20de%20mi%20entrada"
-            }
-            target="_blank"
-          >
-            <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground">
-              <CreditCard className="mt-px h-5 w-5" />
-              <div className="space-y-1">
-                <p className="font-medium leading-none">Compra</p>
-                <p className="text-sm text-muted-foreground">
-                  ¿Tuviste un problema al realizar la compra? ¿Hay un error en
-                  tu orden?
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            href={
-              useWhatsAppLink
-                ? linkWhatsApp
-                : "https://wa.me/5491124058816?text=Hola,%20necesito%20ayuda%20con%20la%20compra%20de%20mi%20entrada"
-            }
-            target="_blank"
-          >
-            <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground">
-              <Ticket className="mt-px h-5 w-5" />
-              <div className="space-y-1">
-                <p className="font-medium leading-none">Entrada</p>
-                <p className="text-sm text-muted-foreground">
-                  ¿No recibiste tu entrada? ¿Quieres cambiar algún dato?
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          <Link href={linkWhatsApp} target="_blank">
-            <div className="-mx-2 flex items-start space-x-4 rounded-md p-2 transition-all hover:bg-accent hover:text-accent-foreground">
-              <Info className="mt-px h-5 w-5" />
-              <div className="space-y-1">
-                <p className="font-medium leading-none">Otras consultas</p>
-                <p className="text-sm text-muted-foreground">
-                  Te contactaremos con el organizador.
-                </p>
-              </div>
-            </div>
-          </Link>
+        <div className="flex flex-col gap-y-4">
+          <Button asChild variant="outline">
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-x-2"
+            >
+              <svg
+                className="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.546 21l3.834-.892A9.94 9.94 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8.01 8.01 0 01-4.797-1.593l-.34-.203-3.016.703.714-3.016-.203-.34A7.974 7.974 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8zm4.537-5.764c-.242-.123-1.438-.71-1.66-.792-.223-.08-.385-.123-.547.123-.162.246-.627.792-.769.954-.142.162-.283.182-.526.06-.242-.123-1.024-.377-1.95-1.204-.72-.643-1.207-1.437-1.349-1.68-.141-.242-.015-.374.106-.495.109-.109.242-.284.363-.426.121-.142.162-.243.242-.405.08-.162.04-.304-.02-.426-.06-.122-.547-1.318-.75-1.804-.197-.473-.397-.408-.547-.416a9.861 9.861 0 00-.466-.008.893.893 0 00-.648.304c-.223.243-.851.832-.851 2.028 0 1.196.871 2.352.992 2.514.121.162 1.709 2.607 4.137 3.654.579.25 1.031.399 1.383.51.581.184 1.111.158 1.529.096.466-.07 1.436-.587 1.638-1.154.202-.567.202-1.053.142-1.155-.061-.101-.223-.162-.466-.284z" />
+              </svg>
+              Contactar por WhatsApp
+            </a>
+          </Button>
+          <Button asChild variant="outline">
+            <a
+              href="mailto:soporte@eventik.app"
+              className="flex items-center gap-x-2"
+            >
+              <Cross2Icon className="h-5 w-5" />
+              Contactar por Email
+            </a>
+          </Button>
         </div>
       </DialogContent>
     </Dialog>
