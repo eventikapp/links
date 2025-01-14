@@ -1,6 +1,6 @@
 import { OrganizerConfig } from "@/types/event"
 import logo from "@/public/logo-comisionados.png"
-import bannerComisionados from "@/public/banner-comisionados.jpg"
+import bannerComisionados from "@/public/conferencia-comisionados-fuego-25.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "Comisionados",
@@ -13,29 +13,29 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       type: "instagram",
       url: "https://www.instagram.com/comisionadosevangelismo/",
     },
-    { type: "video", url: "https://www.youtube.com/@comisionados_" },
+    { type: "video", url: "https://www.youtube.com/@comisionadosevangelismo" },
   ],
   events: [
     {
-      title: "Entrenamiento Evangelístico 2024",
+      title: "Conferencia Comisionados – Fuego 25",
       banner: bannerComisionados,
       dateTime: {
-        startDate: "2024-06-15",
-        startTime: "09:00",
-        endDate: "2024-06-20",
-        endTime: "18:00",
+        startDate: "2025-06-19",
+        startTime: "18:00",
+        endDate: "2025-06-21",
+        endTime: "22:00",
       },
       location: {
-        title: "Centro de Convenciones",
-        subtitle: "Av. Principal 123, Buenos Aires, Argentina",
+        title: "Auditorio Rios de Vida",
+        subtitle: "Dorrego 485, Quilmes, Buenos Aires.",
       },
       primaryLink: {
-        label: "🇦🇷 Argentinos",
-        url: "https://comisionados.eventik.app/e/conferencia-comisionados/",
+        label: "Residentes 🇦🇷 (ARS)",
+        url: "https://comisionados.eventik.app/e/conferencia-comisionados-fuego-25/",
       },
       secondaryLink: {
-        label: "🌍 Extranjeros",
-        url: "https://comisionados-la.eventik.app/e/conferencia-comisionados/",
+        label: "Resto del 🌍 (USD)",
+        url: "https://comisionados-la.eventik.app/e/conferencia-comisionados-fuego-25/",
       },
       publishStatus: "published",
     },
