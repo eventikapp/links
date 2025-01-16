@@ -34,7 +34,7 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
         url: "https://eventik.app/e/intimidad-con-el-amado-2025/",
       },
       secondaryLink: {
-        label: "Resto del 🌍 (USD)",
+        label: "Resto del 🌎 (USD)",
         url: "https://mision-la.eventik.app/e/intimidad-con-el-amado-2025/",
       },
       publishStatus: "published",
