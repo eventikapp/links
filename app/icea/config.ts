@@ -1,6 +1,6 @@
 import { OrganizerConfig } from "@/types/event"
-import logo from "@/public/logo-hillsong.jpg"
-import bannerSisterhood from "@/public/hillsong-casa-abierta-2025.png"
+import logo from "@/public/logo-mision.svg"
+import bannerSisterhood from "@/public/intimidad-con-el-amado-2025.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "MiSion CEM",
