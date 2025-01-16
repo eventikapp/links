@@ -1,11 +1,11 @@
 import { OrganizerConfig } from "@/types/event"
-import logo from "@/public/logo-mision.svg"
-import bannerSisterhood from "@/public/intimidad-con-el-amado-2025.jpg"
+import organizerLogo from "@/public/logo-mision.svg"
+import eventCover from "@/public/intimidad-con-el-amado-2025.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "MiSion CEM",
   description: "Centro de Entrenamiento Ministerial",
-  logo: logo,
+  logo: organizerLogo,
   whatsAppLink: "",
   socialLinks: [
     { type: "globe", url: "https://misioninstituto.com/" },
@@ -18,7 +18,7 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
   events: [
     {
       title: "INTIMIDAD CON EL AMADO 2025",
-      banner: bannerSisterhood,
+      banner: eventCover,
       dateTime: {
         startDate: "2025-07-17",
         startTime: "17:00",

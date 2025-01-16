@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
-import { CalendarIcon } from "@radix-ui/react-icons"
-import { MapPin } from "lucide-react"
+import { Calendar, MapPin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { DialogFAQ } from "@/components/dialog-faq"
@@ -140,7 +139,7 @@ export default function EventPage({
       <CardContent className="grow space-y-3 p-4 pt-0 md:px-6">
         <div className="flex items-center gap-x-3">
           <div className="flex size-9 items-center justify-center rounded-md border p-2 shadow-sm">
-            <CalendarIcon className="size-5" />
+            <Calendar className="size-5" />
           </div>
 
           <div>
