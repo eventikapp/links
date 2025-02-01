@@ -17,7 +17,7 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
   ],
   events: [
     {
-      title: "JEPS 2025: Mi ciudad, su morada",
+      title: "Conferencia Profética: Jesús el Placer Superior 2025",
       banner: bannerEvent,
       dateTime: {
         startDate: "2025-03-01",
