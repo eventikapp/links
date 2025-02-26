@@ -31,11 +31,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
-        url: "https://eventik.app/e/intimidad-con-el-amado-2025/",
+        url: "https://eventik.app/intimidad-con-el-amado-2025/",
       },
       secondaryLink: {
         label: "Resto del 🌎 (USD)",
-        url: "https://mision-la.eventik.app/e/intimidad-con-el-amado-2025/",
+        url: "https://mision-la.eventik.app/intimidad-con-el-amado-2025/",
       },
       publishStatus: "published",
     },
