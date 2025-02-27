@@ -1,6 +1,6 @@
 import { OrganizerConfig } from "@/types/event"
 import organizerLogo from "@/public/logo-mision.svg"
-import eventCover from "@/public/gi-jeps-2026.jpg"
+import eventCover from "@/public/gi2026eventik-04.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "MiSion CEM",
