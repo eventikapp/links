@@ -1,6 +1,6 @@
 import { OrganizerConfig } from "@/types/event"
 import logo from "@/public/logo-ttl.jpg"
-import bannerTomatulugar from "@/public/banner-ttl-2025.jpg"
+import bannerTomatulugar from "@/public/banner-ttl-2025.png"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "TOMATULUGAR",
@@ -28,11 +28,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "🇦🇷 Argentinos",
-        url: "https://ar.eventik.app/e/conferencia-tomatulugar-2025",
+        url: "https://tomatulugar.fint.app/eventos/conferencia-ttl-2025-ar",
       },
       secondaryLink: {
         label: "🌍 Internacionales",
-        url: "https://la.eventik.app/e/conferencia-tomatulugar-2025",
+        url: "https://tomatulugar.fint.app/eventos/conferencia-ttl-2025-ex/",
       },
       publishStatus: "published",
     },
