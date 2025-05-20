@@ -31,7 +31,7 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
-        url: "https://comisionados.eventik.app/e/conferencia-comisionados-fuego-25/",
+        url: "https://comisionados.eventik.app/conferencia-comisionados-fuego-25/",
       },
       secondaryLink: {
         label: "Resto del 🌍 (USD)",
