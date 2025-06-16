@@ -35,7 +35,7 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       secondaryLink: {
         label: "Resto del 🌍 (USD)",
-        url: "https://comisionados-la.eventik.app/e/conferencia-comisionados-fuego-25/",
+        url: "https://comisionados-la.eventik.app/conferencia-comisionados-fuego-25/",
       },
       publishStatus: "published",
     },
