@@ -115,7 +115,7 @@ export default function EventPage({
   )
 
   return (
-    <Card className="max-w-[400px] overflow-hidden rounded-xl border">
+    <Card className="md:w-[400px] overflow-hidden rounded-xl border">
       {banner && (
         <div className="relative aspect-auto w-full">
           <Image
