@@ -14,7 +14,7 @@ export function generateMetadata(config: OrganizerConfig): Metadata {
       type: "website",
       images: [
         {
-          url: config.events[0]?.banner.src || config.logo.src,
+          url: config.events[0]?.banner?.src || config.logo.src,
           width: 1200,
           height: 630,
           alt: config.events[0]?.title || config.name,

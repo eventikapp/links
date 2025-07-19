@@ -1,6 +1,5 @@
 import { OrganizerConfig } from "@/types/event"
 import organizerLogo from "@/public/logo-mision.svg"
-import eventCover from "@/public/intimidad-con-el-amado-2025.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "MiSion CEM",
@@ -18,7 +17,6 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
   events: [
     {
       title: "INTIMIDAD CON EL AMADO 2026",
-      banner: eventCover,
       dateTime: {
         startDate: "2026-07-16",
         startTime: "18:00",

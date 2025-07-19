@@ -18,7 +18,7 @@ interface EventLink {
 }
 
 interface EventPageProps {
-  banner: StaticImageData
+  banner?: StaticImageData
   title: string
   dateTime: {
     startDate: string

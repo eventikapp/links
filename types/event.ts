@@ -3,7 +3,7 @@ import { ComponentType } from "react"
 
 export interface Event {
   title: string
-  banner: StaticImageData
+  banner?: StaticImageData
   dateTime: {
     startDate: string
     startTime: string
