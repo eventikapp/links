@@ -17,13 +17,13 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
   ],
   events: [
     {
-      title: "INTIMIDAD CON EL AMADO 2025",
+      title: "INTIMIDAD CON EL AMADO 2026",
       banner: eventCover,
       dateTime: {
-        startDate: "2025-07-17",
-        startTime: "17:00",
-        endDate: "2025-07-19",
-        endTime: "22:00",
+        startDate: "2026-07-16",
+        startTime: "18:00",
+        endDate: "2026-07-18",
+        endTime: "23:00",
       },
       location: {
         title: "Centro Costa Salguero",
@@ -31,11 +31,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
-        url: "https://eventik.app/intimidad-con-el-amado-2025/",
+        url: "https://misioneventos.fint.app/eventos/intimidad-con-el-amado-2026-ar",
       },
       secondaryLink: {
         label: "Resto del 🌎 (USD)",
-        url: "https://mision-la.eventik.app/intimidad-con-el-amado-2025/",
+        url: "https://misioneventos.fint.app/eventos/intimidad-con-el-amado-2026-ex",
       },
       publishStatus: "published",
     },
