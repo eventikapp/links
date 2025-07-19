@@ -31,11 +31,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
-        url: "https://eventik.app/e/gi-jeps-2026/",
+        url: "https://misioneventos.fint.app/eventos/gi-jeps-2026-ar",
       },
       secondaryLink: {
         label: "Resto del 🌎 (USD)",
-        url: "https://mision-la.eventik.app/e/gi-jeps-2026/",
+        url: "https://misioneventos.fint.app/eventos/gi-jeps-2026-ex",
       },
       publishStatus: "published",
     },
