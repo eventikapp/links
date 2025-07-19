@@ -1,6 +1,6 @@
-# Mi Aplicación
+# Eventik Links
 
-Este repositorio contiene tanto el frontend como el backend de Mi Aplicación.
+Plataforma de gestión de enlaces para eventos de Eventik.
 
 ## Estructura del Proyecto
 
