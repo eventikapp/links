@@ -106,9 +106,3 @@ El proyecto está dividido en dos partes principales:
 ## Variables de Entorno
 
 Asegúrate de configurar las variables de entorno necesarias tanto en Vercel como en Fly.io para el correcto funcionamiento de la aplicación.
-
-## Notas Adicionales
-
-- Asegúrate de tener Node.js y npm instalados en tu sistema.
-- Para el backend, es posible que necesites un Dockerfile en la raíz del proyecto para Fly.io.
-- Consulta la documentación de [Vercel](https://vercel.com/docs) y [Fly.io](https://fly.io/docs/) para más detalles sobre la configuración y el despliegue.
