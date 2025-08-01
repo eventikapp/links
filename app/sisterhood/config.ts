@@ -1,6 +1,6 @@
 import { OrganizerConfig } from "@/types/event"
 import logo from "@/public/logo-hillsong.jpg"
-import bannerSisterhood from "@/public/hillsong-casa-abierta-2025.png"
+import bannerSisterhood from "@/public/hillsong-sisterhood-2025.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "Hillsong",
@@ -17,12 +17,12 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
   ],
   events: [
     {
-      title: "Casa Abierta 2025",
+      title: "SISTERHOOD CONFERENCE 25",
       banner: bannerSisterhood,
       dateTime: {
-        startDate: "2025-02-27",
-        startTime: "19:00",
-        endDate: "2025-03-01",
+        startDate: "2025-09-26",
+        startTime: "18:00",
+        endDate: "2025-09-27",
         endTime: "22:00",
       },
       location: {
@@ -31,11 +31,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
-        url: "https://hillsong.eventik.app/e/casa-abierta-2025/",
+        url: "https://hillsong.fint.app/eventos/sisterhood-conference-25",
       },
       secondaryLink: {
         label: "Resto del 🌍 (USD)",
-        url: "https://hillsong-la.eventik.app/e/casa-abierta-2025/",
+        url: "https://hillsong.fint.app/eventos/sisterhood-conference-2025",
       },
       publishStatus: "published",
     },
