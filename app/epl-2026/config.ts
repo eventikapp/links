@@ -4,7 +4,7 @@ import bannerSisterhood from "@/public/banner-epl-2026.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "Centro Cristiano Vida",
-  description: "¡La iglesia sos vos!x§x§",
+  description: "¡La iglesia sos vos!",
   logo: logo,
   whatsAppLink: "",
   socialLinks: [
