@@ -1,6 +1,6 @@
 import { OrganizerConfig } from "@/types/event"
 import logo from "@/public/logo-ttl.jpg"
-import bannerTomatulugar from "@/public/banner-ttl-2025.png"
+import bannerTomatulugar from "@/public/banner-ttl-2025.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "TOMATULUGAR",
