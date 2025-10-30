@@ -47,11 +47,11 @@ export const eventsMisionCEM: Event[] = [
     links: {
       primary: {
         label: "🇦🇷 Argentinos",
-        url: "https://eventik.app/e/intimidad-con-el-amado-2024/",
+        url: "https://Fint.app/e/intimidad-con-el-amado-2024/",
       },
       secondary: {
         label: "🌍 Extranjeros",
-        url: "https://mision-la.eventik.app/e/intimidad-con-el-amado-2024",
+        url: "https://mision-la.Fint.app/e/intimidad-con-el-amado-2024",
       },
     },
   },

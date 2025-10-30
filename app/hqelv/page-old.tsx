@@ -3,16 +3,16 @@ import Link from "next/link"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
-import logoEventik from "@/public/logo-eventik.svg"
+import logoFint from "@/public/logo-Fint.svg"
 import bannerHqelv from "@/public/banner-hqelv.jpg"
 
 import { buttonVariants } from "@/components/ui/button"
 import { DialogFAQ } from "@/components/dialog-faq"
 
 export const metadata: Metadata = {
-  title: `Eventik | HQELV`,
+  title: `Fint | HQELV`,
   icons: {
-    icon: "/icon-eventik.png", // /public path
+    icon: "/icon-Fint.png", // /public path
   },
 }
 
@@ -22,8 +22,8 @@ export default function Page() {
       <div className="flex w-full flex-col items-center gap-8">
         <Link href="/">
           <Image
-            src={logoEventik}
-            alt="Logo eventikapp"
+            src={logoFint}
+            alt="Logo Fintapp"
             width={120}
             height={120}
             priority
@@ -45,7 +45,7 @@ export default function Page() {
           </h2>
 
           <Link
-            href="https://es.eventik.app/e/hqelv-pre-congreso-congreso/"
+            href="https://es.Fint.app/e/hqelv-pre-congreso-congreso/"
             className={cn(
               buttonVariants({ size: "lg" }),
               "w-full max-w-xl text-lg"
@@ -56,7 +56,7 @@ export default function Page() {
           </Link>
 
           <Link
-            href="https://es.eventik.app/e/hqelv24-congreso/"
+            href="https://es.Fint.app/e/hqelv24-congreso/"
             className={cn(
               buttonVariants({ size: "lg" }),
               "w-full max-w-xl text-lg"

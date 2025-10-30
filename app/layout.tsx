@@ -2,10 +2,10 @@ import type { Metadata } from "next"
 import "@/styles/globals.css"
 
 export const metadata: Metadata = {
-  title: `Eventik`,
-  description: "Compra tus entradas a través de Eventik.",
+  title: `Fint`,
+  description: "Compra tus entradas a través de Fint.",
   icons: {
-    icon: "/icon-eventik.png", // /public path
+    icon: "/icon-Fint.png", // /public path
   },
 }
 

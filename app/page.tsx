@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import logoEventik from "@/public/logo-eventik.svg"
+import logoFint from "@/public/logo-Fint.svg"
 
 // Añadir un array de organizadores con sus logos, nombres y URLs
 const organizers = [
@@ -20,8 +20,8 @@ export default function Page() {
       <div className="flex w-full flex-col items-center gap-8">
         <Link href="/">
           <Image
-            src={logoEventik}
-            alt="Logo eventikapp"
+            src={logoFint}
+            alt="Logo Fintapp"
             width={120}
             height={120}
             priority

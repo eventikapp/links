@@ -12,20 +12,20 @@ import { QuestionMarkCircledIcon, Cross2Icon } from "@radix-ui/react-icons"
 
 interface Props {
   linkWhatsApp: string
-  supportType?: "organizer" | "eventik"
+  supportType?: "organizer" | "Fint"
   className?: string
 }
 
-const EVENTIK_WHATSAPP =
+const Fint_WHATSAPP =
   "https://wa.me/5491124058816?text=Hola,%20necesito%20ayuda%20con%20la%20compra%20de%20mi%20entrada"
 
 export function DialogFAQ({
   linkWhatsApp,
-  supportType = "eventik",
+  supportType = "Fint",
   className,
 }: Props) {
   const whatsappLink =
-    supportType === "organizer" ? linkWhatsApp : EVENTIK_WHATSAPP
+    supportType === "organizer" ? linkWhatsApp : Fint_WHATSAPP
 
   return (
     <Dialog>
@@ -67,7 +67,7 @@ export function DialogFAQ({
           </Button>
           <Button asChild variant="outline">
             <a
-              href="mailto:soporte@eventik.app"
+              href="mailto:soporte@Fint.app"
               className="flex items-center gap-x-2"
             >
               <Cross2Icon className="h-5 w-5" />

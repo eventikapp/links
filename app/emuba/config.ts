@@ -1,11 +1,11 @@
 import { OrganizerConfig } from "@/types/event"
-import logoEventik from "@/public/logo-eventik.svg"
+import logoFint from "@/public/logo-Fint.svg"
 import bannerEmuba from "@/public/banner-aviva.jpg"
 
 export const ORGANIZER_CONFIG: OrganizerConfig = {
   name: "EMUBA",
   description: "Escuela de Música de Buenos Aires",
-  logo: logoEventik,
+  logo: logoFint,
   whatsAppLink: "https://wa.me/5491122602647",
   socialLinks: [],
   events: [
@@ -24,7 +24,7 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "🇦🇷 Argentinos",
-        url: "https://emuba.eventik.app/evento/aviva-el-fuego/",
+        url: "https://emuba.Fint.app/evento/aviva-el-fuego/",
       },
       publishStatus: "published",
     },

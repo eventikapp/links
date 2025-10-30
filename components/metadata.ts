@@ -6,7 +6,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
 export function generateMetadata(config: OrganizerConfig): Metadata {
   return {
     metadataBase: new URL(baseUrl),
-    title: `Eventik | ${config.name}`,
+    title: `Fint | ${config.name}`,
     description: config.description,
     openGraph: {
       title: config.name,

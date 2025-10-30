@@ -31,11 +31,11 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
-        url: "https://comisionados.eventik.app/conferencia-comisionados-fuego-25/",
+        url: "https://comisionados.Fint.app/conferencia-comisionados-fuego-25/",
       },
       secondaryLink: {
         label: "Resto del 🌍 (USD)",
-        url: "https://comisionados-la.eventik.app/conferencia-comisionados-fuego-25/",
+        url: "https://comisionados-la.Fint.app/conferencia-comisionados-fuego-25/",
       },
       publishStatus: "published",
     },

@@ -3,9 +3,9 @@ import type { Metadata } from "next"
 import Header from "@/components/pages/hqelv/header"
 
 export const metadata: Metadata = {
-  title: `Eventik | HQELV`,
+  title: `Fint | HQELV`,
   icons: {
-    icon: "/icon-eventik.png", // /public path
+    icon: "/icon-Fint.png", // /public path
   },
 }
 

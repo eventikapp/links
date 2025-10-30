@@ -1,6 +1,6 @@
-# Eventik Links
+# Fint Links
 
-Plataforma de gestión de enlaces para eventos de Eventik.
+Plataforma de gestión de enlaces para eventos de Fint.
 
 ## Estructura del Proyecto
 
