@@ -26,8 +26,8 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
         endTime: "22:00",
       },
       location: {
-        title: "A definir",
-        subtitle: "Próximamente más información",
+        title: "Iglesia El Encuentro",
+        subtitle: "Arana 1372, Luis Guillón, Buenos Aires.",
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
