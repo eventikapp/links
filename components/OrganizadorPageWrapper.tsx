@@ -5,7 +5,6 @@ import { getEventLabel, getEventStatus } from "@/utils/event-utils"
 import { GlobeIcon, InstagramLogoIcon, VideoIcon } from "@radix-ui/react-icons"
 import Image from "next/image"
 import Link from "next/link"
-import { DialogFAQ } from "@/components/dialog-faq"
 import EventPage from "@/components/EventPage"
 
 const ICON_MAP = {
@@ -47,9 +46,6 @@ export default function OrganizerPageWrapper({
               priority
               className="inset-0 rounded-lg shadow"
             />
-            <div className="absolute -top-0 right-0">
-              <DialogFAQ linkWhatsApp={config.whatsAppLink} />
-            </div>
           </nav>
 
           <section className="flex flex-col items-center justify-center">

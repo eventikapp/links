@@ -2,7 +2,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { GlobeIcon, InstagramLogoIcon, VideoIcon } from "@radix-ui/react-icons"
 
-import { DialogFAQ } from "@/components/dialog-faq"
 import logoHqelv from "@/public/logo-hqelv.jpg"
 
 export default function Header() {
@@ -19,13 +18,6 @@ export default function Header() {
               priority
             />
           </Link>
-
-          <div className="absolute -top-4 right-4 md:-top-8 md:right-8 lg:right-0">
-            <DialogFAQ
-              linkWhatsApp="https://wa.me/34687125934"
-              supportType="organizer"
-            />
-          </div>
         </nav>
 
         <section className="flex flex-col items-center justify-center">
