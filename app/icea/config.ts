@@ -20,14 +20,14 @@ export const ORGANIZER_CONFIG: OrganizerConfig = {
       title: "INTIMIDAD CON EL AMADO 2026",
       banner: eventBanner,
       dateTime: {
-        startDate: "2026-07-16",
+        startDate: "2026-08-13",
         startTime: "18:00",
-        endDate: "2026-07-18",
+        endDate: "2026-08-15",
         endTime: "23:00",
       },
       location: {
-        title: "Centro Costa Salguero",
-        subtitle: "Av. Costanera Rafael Obligado 1221, CABA",
+        title: "Centro de Convenciones Buenos Aires",
+        subtitle: "Av. Pres. Figueroa Alcorta 2099, Cdad. Autónoma de Buenos Aires",
       },
       primaryLink: {
         label: "Residentes 🇦🇷 (ARS)",
