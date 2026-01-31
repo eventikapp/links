@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { Calendar, MapPin } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { formatDateRange } from "@/utils/event-utils"
 import { buttonVariants } from "@/components/ui/button"
 import { DialogFAQ } from "@/components/dialog-faq"
 import {
@@ -44,59 +45,6 @@ const EventLink = ({ label, url }: EventLink) => {
       {label}
     </Link>
   )
-}
-
-interface DateRange {
-  firstLine: string
-  secondLine: string
-}
-
-function formatDateRange(
-  startDate: string,
-  startTime: string,
-  endDate: string,
-  endTime: string
-): DateRange {
-  const start = new Date(`${startDate}T${startTime}`)
-  const end = new Date(`${endDate}T${endTime}`)
-
-  const options: Intl.DateTimeFormatOptions = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  }
-  const timeOptions: Intl.DateTimeFormatOptions = {
-    hour: "2-digit",
-    minute: "2-digit",
-  }
-
-  if (startDate === endDate) {
-    const formattedDate = start.toLocaleDateString("es-ES", {
-      ...options,
-      year: undefined,
-    })
-    const year = start.getFullYear()
-    return {
-      firstLine: `${formattedDate} ${year}`,
-      secondLine: `${start.toLocaleTimeString("es-ES", timeOptions)} - ${end.toLocaleTimeString("es-ES", timeOptions)}`,
-    }
-  } else {
-    const formattedStartDate = start.toLocaleDateString("es-ES", {
-      ...options,
-      year: undefined,
-    })
-    const formattedEndDate = end.toLocaleDateString("es-ES", {
-      ...options,
-      year: undefined,
-    })
-    const startYear = start.getFullYear()
-    const endYear = end.getFullYear()
-    return {
-      firstLine: `${formattedStartDate} ${startYear} ${start.toLocaleTimeString("es-ES", timeOptions)}`,
-      secondLine: `al ${formattedEndDate} ${endYear} ${end.toLocaleTimeString("es-ES", timeOptions)}`,
-    }
-  }
 }
 
 export default function EventPage({
